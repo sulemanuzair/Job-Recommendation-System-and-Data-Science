@@ -1,1 +1,5 @@
 add me on git
+The data is being explored and it is a subset of the data, most probably 1% or 5% or in between.
+exporing data, users file,
+User file has 4719 rows in this subset.
+ManagedOthers attribute in user table has 4719 (all rows filled) only with yes/no value.
