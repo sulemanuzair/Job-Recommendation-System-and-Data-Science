@@ -6,3 +6,13 @@ ManagedOthers attribute in user table has 4719 (all rows filled) only with yes/n
 Managed others : out of 4719 rows, 'no' in 3908 rows, yes in 811 rows.
 Add a histogram for these values.
 Histogram added, clearly seen from histogram most of our users have not managed before, almost 20% of users have managed.
+Graph:
+ManagedOthersHistogram.png
+For people who managed others, there is a column for managedHowMany.
+2 Graphs are attached, results show almost >95% people managed less than 100 people and 
+almost 75% people managed less than or equal to 20 people.
+Graphs:
+PeopleManagedPeople100bucketsize.png
+PeopleManagedPeople10bucketsize_with_max100_being_managed.png
+
+

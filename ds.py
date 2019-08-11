@@ -20,12 +20,17 @@ print (users.describe(include = 'all'))
 print (users.ManagedOthers.unique())
 print (users.shape)
 
-#users.UserID.hist() #column='ManagedOthers')
-#print (users.ManagedOthers.value_counts())
-#plt.show(users.UserID.plot(kind='hist'))
-
-users.ManagedOthers.hist() #column='ManagedOthers')
+#users.ManagedOthers.hist() #column='ManagedOthers')
+#plt.show()
+users_who_managed_others = users.ManagedHowMany.loc[(users.ManagedHowMany > 0) & (users.ManagedHowMany < 100)]
+bucket_size = 10
+users_who_managed_others.hist(bins = range(min(users_who_managed_others), max(users_who_managed_others) + bucket_size, bucket_size))
+#plt.xscale('log')
+plt.xlabel('Number of Managed People')
+plt.ylabel('Number of Managers')
 plt.show()
+
+
 
 #plt.imshow()
 
