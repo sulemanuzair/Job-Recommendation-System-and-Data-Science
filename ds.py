@@ -1,5 +1,9 @@
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.get_backend()
+matplotlib.use('TkAgg')
 
 
 file_path = 'G:/Semester 8/FYP2/users/users_part.tsv'
@@ -11,8 +15,28 @@ desired_width = 320
 pd.set_option('display.width', desired_width)
 pd.set_option('display.max_columns', None)
 
+#include all to include all columns in describe instead of just numeric columns
 print (users.describe(include = 'all'))
 print (users.ManagedOthers.unique())
+print (users.shape)
+
+#users.UserID.hist() #column='ManagedOthers')
+#print (users.ManagedOthers.value_counts())
+#plt.show(users.UserID.plot(kind='hist'))
+
+users.ManagedOthers.hist() #column='ManagedOthers')
+plt.show()
+
+#plt.imshow()
+
+#plt.interactive(False)
+
+#plt.show()
+
+#users.show()
+#print(users.boxplot())
+
+
 #print (users.TotalYearsExperience)
 #print (users.columns)
 

@@ -29,6 +29,16 @@ plt.yticks([0, 2, 4, 6, 8, 10],
 plt.show()
 
 
+
+
+# emulate your ex3.Severity.value_counts()
+data = {'Low': 2, 'Medium': 4, 'High': 5}
+df = pd.Series(data)
+
+plt.bar(range(len(df)), df.values, align='center')
+plt.xticks(range(len(df)), df.index.values, size='small')
+plt.show()
+
 # print ("IA library zaroor install hngi")
 #
 #
@@ -57,3 +67,7 @@ plt.show()
 #
 # print (arr1[1,1])
 #
+
+
+
+
