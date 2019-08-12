@@ -15,4 +15,5 @@ Graphs:
 PeopleManagedPeople100bucketsize.png
 PeopleManagedPeople10bucketsize_with_max100_being_managed.png
 
+Added CityLongitude and CityLatitude columns with the help of some old code, and its code and required files are also uploaded : new_location.py and cities.csv. These files need to be changed/corrected soon due to some issues.
 

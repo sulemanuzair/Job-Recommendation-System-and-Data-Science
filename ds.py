@@ -30,6 +30,9 @@ plt.xlabel('Number of Managed People')
 plt.ylabel('Number of Managers')
 plt.show()
 
+users.boxplot()
+plt.show()
+
 
 
 #plt.imshow()
