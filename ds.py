@@ -20,18 +20,44 @@ print (users.describe(include = 'all'))
 print (users.ManagedOthers.unique())
 print (users.shape)
 
+
+#graph
 #users.ManagedOthers.hist() #column='ManagedOthers')
 #plt.show()
-users_who_managed_others = users.ManagedHowMany.loc[(users.ManagedHowMany > 0) & (users.ManagedHowMany < 100)]
-bucket_size = 10
-users_who_managed_others.hist(bins = range(min(users_who_managed_others), max(users_who_managed_others) + bucket_size, bucket_size))
-#plt.xscale('log')
-plt.xlabel('Number of Managed People')
-plt.ylabel('Number of Managers')
-plt.show()
 
-users.boxplot()
-plt.show()
+#graph
+# users_who_managed_others = users.ManagedHowMany.loc[(users.ManagedHowMany > 0) & (users.ManagedHowMany < 100)]
+# bucket_size = 10
+# users_who_managed_others.hist(bins = range(min(users_who_managed_others), max(users_who_managed_others) + bucket_size, bucket_size))
+# #plt.xscale('log')
+# plt.xlabel('Number of Managed People')
+# plt.ylabel('Number of Managers')
+# plt.show()
+
+
+from collections import Counter
+
+# count the occurrences of each point
+c = Counter(zip(users.CityLatitudeNew, users.CityLongitudeNew))
+# create a list of the sizes, here multiplied by 10 for scale
+s = [10*c[(xx,yy)] for xx,yy in zip(users.CityLatitudeNew, users.CityLongitudeNew)]
+
+# plot it
+plt.scatter(users.CityLongitudeNew, users.CityLatitudeNew, s=s)
+
+#plt.show()
+
+print ('unique cities', users.City.unique().size)
+print ('cities with known latitude and longitude', pd.unique(users.City.loc[(users.CityLongitudeNew != 0) & (users.CityLatitudeNew != 0)]).size)
+
+print ('cities with not latitude and longitude in new file, but in prev file', pd.unique(users.City.loc[(users.CityLongitudeNew == 0) & (users.CityLatitudeNew == 0) & (users.CityLatitude != 0) & (users.CityLatitude != 0)]).size)
+print (s)
+#users.ManagedHowMany.loc[(users.ManagedHowMany > 0) & (users.ManagedHowMany < 100)]
+
+#plt.scatter(users.CityLongitude, users.CityLatitude, marker = 'o', color='r', zorder=5, s=250)
+#plt.show()
+#users.boxplot()
+#plt.show()
 
 
 

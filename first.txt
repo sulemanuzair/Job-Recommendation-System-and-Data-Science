@@ -17,3 +17,10 @@ PeopleManagedPeople10bucketsize_with_max100_being_managed.png
 
 Added CityLongitude and CityLatitude columns with the help of some old code, and its code and required files are also uploaded : new_location.py and cities.csv. These files need to be changed/corrected soon due to some issues.
 
+Unique Cities found in subset dataset, 1840 cities.
+Cities with added longitude and latitude, 628.
+Almost 2/3rd cities coordinates are missing.
+New Cities file has been added, now out of 1840 new cities, 1712 cities coordinates are known.
+New file contains all coordinates of previous file.
+
+
