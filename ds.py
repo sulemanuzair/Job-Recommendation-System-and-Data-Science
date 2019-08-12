@@ -7,7 +7,7 @@ matplotlib.use('TkAgg')
 
 
 file_path = 'G:/Semester 8/FYP2/users/users_part.tsv'
-#users = np.genfromtxt(fname=file_path, delimiter="\t", names=True, filling_values=1)
+# users = np.genfromtxt(fname=file_path, delimiter="\t", names=True, filling_values=1)
 users = pd.read_csv(file_path, sep='\t')
 
 # display more width and columns
@@ -21,9 +21,9 @@ print (users.ManagedOthers.unique())
 print (users.shape)
 
 
-#graph
-#users.ManagedOthers.hist() #column='ManagedOthers')
-#plt.show()
+# graph
+# users.ManagedOthers.hist() #column='ManagedOthers')
+# plt.show()
 
 #graph
 # users_who_managed_others = users.ManagedHowMany.loc[(users.ManagedHowMany > 0) & (users.ManagedHowMany < 100)]
@@ -34,53 +34,52 @@ print (users.shape)
 # plt.ylabel('Number of Managers')
 # plt.show()
 
+users_with_cities_coordinates = users.loc[(users.CityLatitudeNew != 0) & (users.CityLongitudeNew != 0)]
 
 from collections import Counter
-
 # count the occurrences of each point
-c = Counter(zip(users.CityLatitudeNew, users.CityLongitudeNew))
+c = Counter(zip(users_with_cities_coordinates.CityLatitudeNew, users_with_cities_coordinates.CityLongitudeNew))
 # create a list of the sizes, here multiplied by 10 for scale
-s = [10*c[(xx,yy)] for xx,yy in zip(users.CityLatitudeNew, users.CityLongitudeNew)]
+s = [10*c[(xx,yy)] for xx,yy in zip(users_with_cities_coordinates.CityLatitudeNew, users_with_cities_coordinates.CityLongitudeNew)]
 
 # plot it
-plt.scatter(users.CityLongitudeNew, users.CityLatitudeNew, s=s)
+plt.scatter(users_with_cities_coordinates.CityLongitudeNew, users_with_cities_coordinates.CityLatitudeNew, s=s)
 
-#plt.show()
+plt.show()
 
 print ('unique cities', users.City.unique().size)
 print ('cities with known latitude and longitude', pd.unique(users.City.loc[(users.CityLongitudeNew != 0) & (users.CityLatitudeNew != 0)]).size)
-
 print ('cities with not latitude and longitude in new file, but in prev file', pd.unique(users.City.loc[(users.CityLongitudeNew == 0) & (users.CityLatitudeNew == 0) & (users.CityLatitude != 0) & (users.CityLatitude != 0)]).size)
-print (s)
-#users.ManagedHowMany.loc[(users.ManagedHowMany > 0) & (users.ManagedHowMany < 100)]
+# print (s)
+# users.ManagedHowMany.loc[(users.ManagedHowMany > 0) & (users.ManagedHowMany < 100)]
 
-#plt.scatter(users.CityLongitude, users.CityLatitude, marker = 'o', color='r', zorder=5, s=250)
-#plt.show()
-#users.boxplot()
-#plt.show()
-
-
-
-#plt.imshow()
-
-#plt.interactive(False)
-
-#plt.show()
-
-#users.show()
-#print(users.boxplot())
+# plt.scatter(users.CityLongitude, users.CityLatitude, marker = 'o', color='r', zorder=5, s=250)
+# plt.show()
+# users.boxplot()
+# plt.show()
 
 
-#print (users.TotalYearsExperience)
-#print (users.columns)
 
-#users['test'] = users.TotalYearsExperience / users.WorkHistoryCount
-#summary = users.describe()
-#print(summary)
-#print (summary.loc['count'])
-#print (users.loc[80:200, 'City'])
+# plt.imshow()
+
+# plt.interactive(False)
+
+# plt.show()
+
+# users.show()
+# print(users.boxplot())
+
+
+# print (users.TotalYearsExperience)
+# print (users.columns)
+
+# users['test'] = users.TotalYearsExperience / users.WorkHistoryCount
+# summary = users.describe()
+# print(summary)
+# print (summary.loc['count'])
+# print (users.loc[80:200, 'City'])
 #
-#print (users.dtype.names)
+# print (users.dtype.names)
 # print (np.mean(users['TotalYearsExperience']))
 # print ("Median Experience : ", np.median(users['TotalYearsExperience']))
 #
@@ -91,4 +90,4 @@ print (s)
 # print(np.corrcoef(users['TotalYearsExperience'], users['ManagedHowMany']))
 # print(np.corrcoef(users['WorkHistoryCount'], users['ManagedHowMany']))
 
-#print(users.stats.describe)
+# print(users.stats.describe)
