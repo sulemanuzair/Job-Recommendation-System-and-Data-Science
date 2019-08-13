@@ -22,5 +22,5 @@ Cities with added longitude and latitude, 628.
 Almost 2/3rd cities coordinates are missing.
 New Cities file has been added, now out of 1840 new cities, 1712 cities coordinates are known.
 New file contains all coordinates of previous file.
-
+ 
 
