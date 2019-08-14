@@ -22,5 +22,23 @@ Cities with added longitude and latitude, 628.
 Almost 2/3rd cities coordinates are missing.
 New Cities file has been added, now out of 1840 new cities, 1712 cities coordinates are known.
 New file contains all coordinates of previous file.
+
+Analysed the country of all users. More than 99% of the users are from US, and some exceptions are present.
+Graphs of user countries attached.
+users_countries.png
+users_countries_excluding_us.png
+
+Analysing states, first tried histogram, faced some problems in the output/visualization.
+Added state coordiniates, and following the same strategy as of cities (drawn on coordinates, with circle cycle representing users)
+graph added for state population
+users_population_in_states.png
+can compare city and states graph
+also added file to add state latitude and longitude in our users file
+states_location.py
+
+
+
+
+
  
 

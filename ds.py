@@ -35,7 +35,6 @@ print (users.shape)
 # plt.show()
 
 users_with_cities_coordinates = users.loc[(users.CityLatitudeNew != 0) & (users.CityLongitudeNew != 0)]
-
 from collections import Counter
 # count the occurrences of each point
 c = Counter(zip(users_with_cities_coordinates.CityLatitudeNew, users_with_cities_coordinates.CityLongitudeNew))
@@ -51,9 +50,41 @@ print ('cities with known latitude and longitude', pd.unique(users.City.loc[(use
 print ('cities with not latitude and longitude in new file, but in prev file', pd.unique(users.City.loc[(users.CityLongitudeNew == 0) & (users.CityLatitudeNew == 0) & (users.CityLatitude != 0) & (users.CityLatitude != 0)]).size)
 
 print ('Unique Contries: ', users.Country.unique())
+#print (s)
 
 
-print (s)
+# graph for countries
+#users.Country.hist() #column='ManagedOthers')
+#plt.show()
+
+#users.Country.loc[(users.Country != 'US')].hist() #column='ManagedOthers')
+#plt.show()
+
+# graph for states
+print("total states: ", users.loc[(users.Country == 'US')].State.unique().size)
+print("states: ", users.loc[(users.Country == 'US')].State.unique())
+
+
+# count the occurrences of each point
+# checking for != 0 latitude as some entries has some issues, and/or do not exist in our states csv file
+users_us = users.loc[(users.Country == 'US') & (users.StateLatitude != 0)]
+print (users_us)
+c_states = Counter(zip(users_us.StateLatitude, users_us.StateLongitude))
+# create a list of the sizes, here multiplied by 10 for scale
+s_states = [c_states[(xx,yy)] for xx,yy in zip(users_us.StateLatitude, users_us.StateLongitude)]
+
+# plot it
+plt.scatter(users_us.StateLongitude, users_us.StateLatitude, s=s_states)
+plt.show()
+
+
+#plt.show()
+#users.loc[(users.Country == 'US')].State.hist(rwidth=0.5) #column='ManagedOthers')
+#plt.show()
+
+#print((users.loc[(users.Country == 'US')]).groupby('State').UserID.count())
+
+
 # users.ManagedHowMany.loc[(users.ManagedHowMany > 0) & (users.ManagedHowMany < 100)]
 
 # plt.scatter(users.CityLongitude, users.CityLatitude, marker = 'o', color='r', zorder=5, s=250)

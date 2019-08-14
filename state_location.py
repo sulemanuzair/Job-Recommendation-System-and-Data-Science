@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu May 30 00:35:24 2019
 
-@author: Haziq Farooq
-"""
 
 import pandas as pd
 from sklearn import preprocessing
@@ -35,13 +30,13 @@ q=0
 
 
 yi=defaultdict(list)
-with open("uscitiesv1.5.csv", encoding="utf8") as csvfile:
+with open("statelatlong.csv", encoding="utf8") as csvfile:
     readCSV = csv.reader(csvfile, delimiter=',')
     for row in readCSV:
        #print(row[2])
        if (t>0):
            #tk=row[5].split(',')
-           tk = [row[6], row[7]]
+           tk = [row[1], row[2]]
            yi[row[0]].append(tk[0])
            yi[row[0]].append(tk[-1])
        t=t+1
@@ -51,7 +46,7 @@ with open('../users/users_part.tsv' , encoding="utf8") as csvfile1:
     readCSV = csv.reader(csvfile1, delimiter='\t')
     for row in readCSV:
          if(q>0):
-           arr.append(row[3])#(row[5]) #city column number
+           arr.append(row[4])#(row[5]) #city column number
          q=q+1 
 
 
@@ -66,8 +61,8 @@ for i in arr:
         latitude.append(0.0)
 
 
-df=pd.DataFrame({"CityLongitudeNew":longitude,
-                "CityLatitudeNew":latitude}) 
+df=pd.DataFrame({"StateLongitude":longitude,
+                "StateLatitude":latitude}) 
     
     
 data =pd.read_csv('../users/users_part.tsv' , sep='\t')
