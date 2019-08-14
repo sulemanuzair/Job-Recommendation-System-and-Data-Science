@@ -42,8 +42,8 @@ c = Counter(zip(users_with_cities_coordinates.CityLatitudeNew, users_with_cities
 s = [c[(xx,yy)] for xx,yy in zip(users_with_cities_coordinates.CityLatitudeNew, users_with_cities_coordinates.CityLongitudeNew)]
 
 # plot it
-plt.scatter(users_with_cities_coordinates.CityLongitudeNew, users_with_cities_coordinates.CityLatitudeNew, s=s)
-plt.show()
+#plt.scatter(users_with_cities_coordinates.CityLongitudeNew, users_with_cities_coordinates.CityLatitudeNew, s=s)
+#plt.show()
 
 print ('unique cities', users.City.unique().size)
 print ('cities with known latitude and longitude', pd.unique(users.City.loc[(users.CityLongitudeNew != 0) & (users.CityLatitudeNew != 0)]).size)
@@ -74,8 +74,8 @@ c_states = Counter(zip(users_us.StateLatitude, users_us.StateLongitude))
 s_states = [c_states[(xx,yy)] for xx,yy in zip(users_us.StateLatitude, users_us.StateLongitude)]
 
 # plot it
-plt.scatter(users_us.StateLongitude, users_us.StateLatitude, s=s_states)
-plt.show()
+#plt.scatter(users_us.StateLongitude, users_us.StateLatitude, s=s_states)
+#plt.show()
 
 
 #plt.show()
@@ -91,6 +91,30 @@ plt.show()
 # plt.show()
 # users.boxplot()
 # plt.show()
+
+# Education
+print (users.DegreeType.unique())
+
+#users.DegreeType.value_counts().plot(kind='pie')
+#users.DegreeType.hist()
+#plt.show()
+
+
+print ('different majors: ', users.Major.unique().size)
+print ('different majors: ', users.Major.unique())
+pd.set_option('display.max_rows', None)
+print ('different majors: ', users.Major.value_counts())
+
+#print ('rows having major majors: ', (users.Major == 'Finance' ).size )
+
+
+
+# finance_users = (users.loc[(users.City == "Paramount")])
+# #finance_users = users[(users.City.isnull())]
+# finance_users = users.loc[users['Major'].isnull()]
+#
+# print (finance_users.Major)
+# print (len(finance_users))
 
 
 

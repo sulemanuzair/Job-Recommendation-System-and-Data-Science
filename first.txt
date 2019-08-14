@@ -36,6 +36,23 @@ can compare city and states graph
 also added file to add state latitude and longitude in our users file
 states_location.py
 
+zip code
+read(past) about them online, used for postal purposes, have information about location,
+but at present, considering only city and state
+
+Next fields are related to education
+
+DegreeType
+Almost 25% people have not provided/have not degrees
+almost 25% people have bachelors degree
+almost 25% people have high school degree
+associates, master also have a considerable share
+vocational and phd are few in number
+
+doing work on major field
+
+
+
 
 
 
