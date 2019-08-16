@@ -103,7 +103,16 @@ print (users.DegreeType.unique())
 print ('different majors: ', users.Major.unique().size)
 print ('different majors: ', users.Major.unique())
 pd.set_option('display.max_rows', None)
-print ('different majors: ', users.Major.value_counts())
+#print ('different majors: ', users.Major.value_counts())
+#print (users.Major.str.split(expand=True).stack().value_counts())
+
+#users.Major.str.split(expand=True).stack().value_counts().plot(kind='pie')
+#users.Major.value_counts().plot(kind='pie')
+#plt.show()
+
+print ("NA entries of major", users.Major.isna().sum())
+
+
 
 #print ('rows having major majors: ', (users.Major == 'Finance' ).size )
 

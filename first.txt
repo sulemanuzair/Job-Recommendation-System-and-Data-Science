@@ -50,8 +50,14 @@ associates, master also have a considerable share
 vocational and phd are few in number
 
 doing work on major field
+counting the fields and storing their result in a text file (also added a graph ->user_major_count.png)
+out of approx 5000 users, 963 have Not Applicable major, it could mean not provided
+While Business Administration has 137, and accounting has 79 count.
 
+also done word count on the major column, its result is also stored in file. (also added a graph -> user_major_word_count_pie.png)
+Business 368, Management 246, Adminisgtration 233, Science 132, Engineering 115, Accounting 107, Computer 100 count
 
+Another addition that 1130 in addition to Not Application are missing, so we dont have approx 40% users major.  
 
 
 
