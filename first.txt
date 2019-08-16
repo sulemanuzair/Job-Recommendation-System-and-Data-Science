@@ -59,6 +59,14 @@ Business 368, Management 246, Adminisgtration 233, Science 132, Engineering 115,
 
 Another addition that 1130 in addition to Not Application are missing, so we dont have approx 40% users major.  
 
+now, starting to work on graduation date
+1429 no entries of graduation date
+added a histogram graduation_date_hist.png (50 bins)
+graduation_date_his_5bins.png
+also added a pie chart
+graduation_date_pie_chart.png
+so, majority of the users are from 2010-2015, less experienced, and almost more than 75% from 1990-2015
+
 
 
 

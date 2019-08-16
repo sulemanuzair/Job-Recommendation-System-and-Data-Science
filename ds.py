@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import matplotlib
 matplotlib.get_backend()
 matplotlib.use('TkAgg')
-
+import dateutil.parser as parser
 
 file_path = 'G:/Semester 8/FYP2/users/users_part.tsv'
 # users = np.genfromtxt(fname=file_path, delimiter="\t", names=True, filling_values=1)
@@ -112,8 +112,23 @@ pd.set_option('display.max_rows', None)
 
 print ("NA entries of major", users.Major.isna().sum())
 
+print ("NA entries of graduation date", users.GraduationDate.isna().sum())
+print (type(users.GraduationDate.loc[0]))
+print(parser.parse(users.GraduationDate.loc[0]).year)
+users['GraduationYear'] = pd.DatetimeIndex(users.GraduationDate).year
+bucket_size = 5
+# users_who_managed_others.hist(bins = range(min(users_who_managed_others), max(users_who_managed_others) + bucket_size, bucket_size))
 
+#users.GraduationYear.hist(bins = 15)#range(int(min(users.GraduationYear)), int(max(users.GraduationYear)) + bucket_size, bucket_size))
+#plt.show()
 
+a = users.groupby('GraduationYear').size()
+#print (a)
+users['bins'] = pd.cut(users['GraduationYear'],bins=[1960, 1970, 1980, 1990, 2000, 2005, 2010, 2015, 2020], labels=["60-70", "70-80", "80-90", "90-00", "00-05", "05-10", "10-15", "15-20"])
+bins_count = users.groupby('bins').size()
+bins_count.plot.pie(figsize=(8, 8))
+plt.show()
+#print (users)
 #print ('rows having major majors: ', (users.Major == 'Finance' ).size )
 
 
