@@ -1,4 +1,4 @@
-add me on git
+add me on git, later will check corelation
 The data is being explored and it is a subset of the data, most probably 1% or 5% or in between.
 exporing data, users file,
 User file has 4719 rows in this subset.
@@ -65,11 +65,24 @@ added a histogram graduation_date_hist.png (50 bins)
 graduation_date_his_5bins.png
 also added a pie chart
 graduation_date_pie_chart.png
-so, majority of the users are from 2010-2015, less experienced, and almost more than 75% from 1990-2015
+so, majority of the users are from 2010-2015(more than 25%), less experienced, and almost more than 75% from 1990-2015
 
+now, starting to work on work history fields,
+WorkHistoryCount,
+0 zeros with empty field
+balanced graph (non-skewed),, bell shaped graph
 
+TotalYearsExperience
+190 empty rows
+25% person users with 0-5years experience
+more than 25% with 5-10 years experience
+10-15 years experienced users are also a big chunk of users
+data is skewed, can be seen from graphs
+users_total_years_experience_pie.png
+users_total_years_experience.png
 
+CurrentlyEmployed
+645 rows with missing attribute
+almost 50% 50% users are currently employed, 50% are not employed
 
-
- 
 

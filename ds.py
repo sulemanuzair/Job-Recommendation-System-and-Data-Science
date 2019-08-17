@@ -126,11 +126,37 @@ a = users.groupby('GraduationYear').size()
 #print (a)
 users['bins'] = pd.cut(users['GraduationYear'],bins=[1960, 1970, 1980, 1990, 2000, 2005, 2010, 2015, 2020], labels=["60-70", "70-80", "80-90", "90-00", "00-05", "05-10", "10-15", "15-20"])
 bins_count = users.groupby('bins').size()
-bins_count.plot.pie(figsize=(8, 8))
-plt.show()
+#bins_count.plot.pie(figsize=(8, 8))
+#plt.show()
 #print (users)
 #print ('rows having major majors: ', (users.Major == 'Finance' ).size )
 
+
+
+print ("NA entries of WorkHistoryCount", users.WorkHistoryCount.isna().sum())
+#users.WorkHistoryCount.hist() #column='ManagedOthers')
+#plt.title("Users Work History Count")
+#plt.show()
+
+print ("NA entries of TotalYearsExperience", users.TotalYearsExperience.isna().sum())
+users['bins'] = pd.cut(users['TotalYearsExperience'],bins=[0, 3, 5, 10, 15, 20, 25, 30, 200], labels=["0-3", "3-5", "5-10", "10-15", "15-20", "20-25", "25-30", "30-200"])
+bins_count = users.groupby('bins').size()
+#bins_count.plot.pie(figsize=(8, 8))
+#plt.title("Users Total Years Experience")
+#plt.show()
+
+
+#users.loc[(users.TotalYearsExperience <50)].TotalYearsExperience.hist()#plot(kind='pie')#(bins = 10) #column='ManagedOthers')
+#plt.title("Users Total Years Experience")
+#plt.show()
+
+
+print (users.CurrentlyEmployed.unique())
+print ("NA entries of CurrentlyEmployed", users.CurrentlyEmployed.isna().sum())
+
+users.CurrentlyEmployed.value_counts().plot(kind='pie') #plot(kind='pie')#(bins = 10) #column='ManagedOthers')
+plt.title("Users Currently Employed")
+plt.show()
 
 
 # finance_users = (users.loc[(users.City == "Paramount")])
