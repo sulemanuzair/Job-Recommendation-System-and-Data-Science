@@ -1,0 +1,9 @@
+data mining - a technique to extract useful information from raw data, some purani example,
+if customers some A thing, they also buy B thing along with it,,.
+
+example:
+receipt -> items
+rice -> beans
+
+'support' is when both items are in receipt
+'confidence' is when IF rice occurs in receipt, there beans also exist
