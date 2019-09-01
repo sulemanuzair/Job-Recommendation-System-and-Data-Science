@@ -14,3 +14,4 @@ and we also require the frequency of individual items as well,
 then, in coding, instead of using arrays, using hash to save space ( and time too).
 
 Output is the probability of events with each other.
+also, in exercise, first cleaned the data, a very important thing
