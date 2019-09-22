@@ -1,0 +1,20 @@
+Algorithms start
+Algorithms basics
+hashing --> my thinking --> good for searching, adding , removing values
+balanced search trees (bst) --> better for ordered values, and ordered based operations
+divide and conquer,
+greedy method
+dynamic programming
+
+sorting and graph search
+stable match (stable marriage example)
+linear programming, optimization problem, used some kind of polyhedral shape for example to explain
+Efficiency :  performance AND resources
+P, NP
+NP completeness
+dealing with NP problems
+approximation 
+heuristic algorithms
+
+
+
