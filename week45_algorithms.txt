@@ -16,5 +16,56 @@ dealing with NP problems
 approximation 
 heuristic algorithms
 
+Algirthms End
+==============================
+
+Personal Genome Start
+Genetic Sequence
+very large size, 10^9
+of that genome, majority defines human, ~0.1% defines charecteristics, 
+of that part, majority of part is commmon, very small part is specific to each person,
+common sequnces majorly small and complex effect
+rare sequences occur rarely but usually effect is obvious(you can say)
+
+studying genomics
+a standard average genome
+takes a person's genome,
+make parts of standard genome as hash keys,
+and then find parts of sample genome and find in hash,
+all linear operations
+
+effect of genomes on diseases, 
+also a case k other genome also effecting, proxy genome
+perfect proxy and more common occuring imperfect proxy
+Personnal genomes per study and also other factors change it like environment, (socia-economic conditions, etc)
+
+interconnected between genomes
+in example, found connectedness in hierarchy and origins
+k kn kis ziada qareebi rishtedaar he
+and explained linear (hash) algorithm instead of n^2 algorithm for this
+
+Machine learning start
+relation of algorithms and machine learning
+
+cases explain jese schrizopenia, breast cancer etc
+
+conclusion -- coonnection with data science:
+data size requires single scan
+messy and probablistic
+connections are a challenge
 
 
+
+
+
+machine learning basics
+knn classification - uses all dataset for classification
+k = 3, experimentally good
+
+kafi cheezon baad
+classification
+linear classifier
+maximum distance between classes
+SVM - support vector machine
+
+for multilclasses, ensemble classification, e.g AdaBoost and Random forests, 
