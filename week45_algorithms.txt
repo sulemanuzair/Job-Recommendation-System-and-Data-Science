@@ -68,4 +68,48 @@ linear classifier
 maximum distance between classes
 SVM - support vector machine
 
-for multilclasses, ensemble classification, e.g AdaBoost and Random forests, 
+for multilclasses, ensemble classification, e.g AdaBoost and Random forests,
+SVM and Random forests, good classification techniques
+SVM naturally for two classes, random forest naturally for multiple classes
+Model Selection and Classifier assessment
+Model Selection -> optimize performance
+classifier assessment -> interpret performance 
+test data and validation data,
+
+
+cross validation
+leave one out validation
+k fold validation
+
+big data
+deep learning (feature extraction of speech data and visual data)
+
+probalistic modeling
+assumptions, data and discover patterns, predict and explore
+
+topic modeling
+simple topic model - latent dirichlet allocation LDA
+mixed membership assumption
+graphical models
+variational inference (model)
+
+probabilistic modeling
+generic inference
+
+sentiment analysis
+topic modeling
+
+
+pre-term birth data science problem
+explanation
+data cleaning and pre processing
+
+sensitivity and specificty(measures to check classification)
+Quanminer , for quantitative assoiation mining
+
+Regression
+Lasso Regression
+Elastic Net Regression
+Non-linear kernels were better for this study
+
+

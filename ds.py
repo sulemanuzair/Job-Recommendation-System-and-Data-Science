@@ -6,7 +6,7 @@ matplotlib.get_backend()
 matplotlib.use('TkAgg')
 import dateutil.parser as parser
 
-file_path = 'G:/Semester 8/FYP2/users/users_part.tsv'
+file_path = 'G:/Semester 8/FYP2/dataset/users/users_part.tsv'
 # users = np.genfromtxt(fname=file_path, delimiter="\t", names=True, filling_values=1)
 users = pd.read_csv(file_path, sep='\t')
 
