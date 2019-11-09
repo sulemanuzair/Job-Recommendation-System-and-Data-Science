@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a58b05ba-11dd-41da-996e-180291b92258" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ds.py" beforeDir="false" afterPath="$PROJECT_DIR$/ds.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week45_algorithms.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week45_algorithms.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +45,7 @@
     <session id="-1178935933">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.94" value="1" />
@@ -92,7 +91,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ds.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1270">
+            <state relative-caret-position="-2752">
               <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -159,7 +158,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="960" />
     <option name="height" value="1033" />
   </component>
@@ -299,14 +298,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="840" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16523464" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35643566" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35643566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -387,7 +387,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ds.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1270">
+        <state relative-caret-position="-2752">
           <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
