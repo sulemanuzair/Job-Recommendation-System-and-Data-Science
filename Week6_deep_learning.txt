@@ -96,6 +96,13 @@ Word Embeddings
 hierarchical softmax for quicker learning, during test and training, practically, not good outputs
 Importance sampling
   - bag of words
+Noise Contrastive estimation
+combining neural language models and n-grams
+Neural machine translation
+Attention mechanism (Machine Translation)
+
+
+autoencoders
 
 
 
