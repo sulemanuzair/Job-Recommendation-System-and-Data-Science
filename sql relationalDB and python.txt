@@ -1,0 +1,4 @@
+python code to interact with database
+flask basic app
+also check basic sql injection
+bleach a library for handling dangerous html, js code
