@@ -1,0 +1,17 @@
+data mining - a technique to extract useful information from raw data, some purani example,
+if customers buy some A thing, they also buy B thing along with it,,.
+
+example:
+receipt -> items
+rice -> beans
+
+'support' is when both items are in receipt
+'confidence' is when IF rice occurs in receipt, the beans also exist there
+probability and conditional probablity is used (P (B|A)/ P(A)) :: Probability of occurence of B provided A is present, divided by probability of occurence of A.
+
+then, contigency table having count of all items bought together type
+and we also require the frequency of individual items as well,
+then, in coding, instead of using arrays, using hash to save space ( and time too).
+
+Output is the probability of events with each other.
+also, in exercise, first cleaned the data, a very important thing
