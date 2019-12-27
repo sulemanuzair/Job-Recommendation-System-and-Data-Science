@@ -1,0 +1,39 @@
+nosql explanation
+one form is json type, key value pairs
+azure cloud service
+multiple types of storage
+TABLES 
+---- tables - partion key and other (like id key)
+---- expand horizontally
+---- and further explanation how no-sql can be structure less(proper structure) and still work
+
+---- Valet Key pattern for making web application thin
+
+
+Indexes are also present
+global cosmos etc
+
+Collection
+Mongo Db
+indexes in mongo db
+
+other no sql databases
+cassandra , based on columns
+lucene and solr, indexing
+azure search for providing search functionality in apps
+hbase databses that powers hadoop applications
+redis - for caching , lua in redis for complex tasks (scripts), and ruby and redis
+
+
+CAP theorem for distributed (database) systems
+
+
+Databases objectives:
+Programmability
+Distribution
+Durability
+Transaction scope
+Query
+Schema/index management
+Performance Isolation
+

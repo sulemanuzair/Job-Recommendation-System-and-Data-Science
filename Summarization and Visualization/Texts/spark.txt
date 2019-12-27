@@ -1,0 +1,8 @@
+built on hadoop
+machine learning models
+sql support
+graph processing algorithms
+distributed machine learning
+
+spark has many benifits ove simple hadoop MR
+e.g it can use memory to store some info for faster processing etc

@@ -1,0 +1,858 @@
+	ClusterUser	ClusterJob	Title	UserID	JobID	Similar
+329	1	6	Sales Administrative Assistant	30515	10765	14
+326	1	6	Sales Administrative Assistant	30515	10765	13
+327	1	6	Sales Administrative Assistant	30515	10765	13
+328	1	6	Sales Administrative Assistant	30515	10765	13
+344	1	7	Teller	32487	9350	4
+345	1	7	Teller	32487	9350	4
+849	1	9	Procurement/trans. Mgr.	88381	769	10
+850	1	9	Procurement/trans. Mgr.	88381	769	10
+851	1	9	Procurement/trans. Mgr.	88381	769	10
+632	1	9	Dental Receptionist	66234	445	6
+633	1	9	Dental Receptionist	66234	445	6
+311	1	9	Domestic Violence	26004	370	5
+312	1	9	Accounting	26004	11383	5
+313	1	9	Accounting	26004	11383	5
+314	1	9	Accounting	26004	11383	5
+315	1	9	Accounting	26004	11383	5
+630	1	9	Dental Receptionist	66234	445	5
+631	1	9	Dental Receptionist	66234	445	5
+308	1	9	Domestic Violence	26004	370	3
+309	1	9	Domestic Violence	26004	370	3
+310	1	9	Domestic Violence	26004	370	3
+368	1	9	Dental Receptionist	33988	445	2
+369	1	9	Dental Receptionist	33988	445	2
+370	1	9	Dental Receptionist	33988	445	2
+614	1	11	Teller	63705	11462	8
+615	1	11	Teller	63705	11462	8
+616	1	11	Teller	63705	11462	8
+316	1	15	Forklift Operators / Order Pullers	26346	6406	3
+317	1	15	Forklift Operators / Order Pullers	26346	6406	3
+318	1	15	Forklift Operators / Order Pullers	26346	6406	3
+89	1	16	Aircraft Avionics Installer I	8977	1586	3
+90	1	16	Aircraft Avionics Installer I	8977	1586	3
+634	1	19	Sales Professional	66234	444	6
+635	1	19	Sales Professional	66234	444	6
+636	1	19	Sales Professional	66234	444	6
+637	1	19	Sales Professional	66234	444	6
+737	1	33	Sales and Hiring Manager	76468	2577	6
+738	1	33	Sales and Hiring Manager	76468	2577	6
+739	1	33	Sales and Hiring Manager	76468	2577	6
+740	1	33	Sales and Hiring Manager	76468	2577	6
+371	1	41	MDNOW Urgent Care Front Desk	33988	550	3
+372	1	41	MDNOW Urgent Care Front Desk	33988	550	3
+373	1	41	MDNOW Urgent Care Front Desk	33988	550	3
+741	1	44	KENNEL ASSISTANT Drug free workplace	76468	1751	6
+742	1	44	KENNEL ASSISTANT Drug free workplace	76468	1751	6
+743	1	44	KENNEL ASSISTANT Drug free workplace	76468	1751	6
+744	1	44	KENNEL ASSISTANT Drug free workplace	76468	1751	6
+745	1	44	FT Leasing Consultant DP7796890 Needed for properties	76468	1739	6
+746	1	44	FT Leasing Consultant DP7796890 Needed for properties	76468	1739	6
+747	1	44	FT Leasing Consultant DP7796890 Needed for properties	76468	1739	6
+748	1	44	FT Leasing Consultant DP7796890 Needed for properties	76468	1739	6
+749	1	44	Dental AssistantDP7801124 Orthodontist office looking	76468	1742	4
+750	1	44	Dental AssistantDP7801124 Orthodontist office looking	76468	1742	4
+751	1	44	Dental AssistantDP7801124 Orthodontist office looking	76468	1742	4
+752	1	44	Dental AssistantDP7801124 Orthodontist office looking	76468	1742	4
+330	1	45	Client Call Center Specialist	30515	11512	14
+331	1	45	Client Call Center Specialist	30515	11512	14
+332	1	45	Client Call Center Specialist	30515	11512	14
+333	1	45	Client Call Center Specialist	30515	11512	3
+638	1	46	CUSTOMER SERVICE REPRESENTATIVE	66234	481	6
+639	1	46	CUSTOMER SERVICE REPRESENTATIVE	66234	481	6
+243	1	46	Call Center Customer Service Agent	17523	11160	4
+244	1	46	Call Center Customer Service Agent	17523	11160	4
+245	1	46	Call Center Customer Service Agent	17523	11160	4
+640	1	46	CUSTOMER SERVICE REPRESENTATIVE	66234	481	4
+641	1	46	CUSTOMER SERVICE REPRESENTATIVE	66234	481	4
+553	2	4	MECHANICAL ASSEMBLER	57231	7168	7
+554	2	4	MECHANICAL ASSEMBLER	57231	7168	7
+555	2	4	MECHANICAL ASSEMBLER	57231	7168	3
+43	2	6	Data Entry - full time	4366	460	12
+41	2	6	Data Entry - full time	4366	460	2
+42	2	6	Data Entry - full time	4366	460	2
+133	2	9	DRIVERS/TRAINEES NEEDED Veterans Welcome Earn $600-$800	11647	510	4
+134	2	9	DRIVERS/TRAINEES NEEDED Veterans Welcome Earn $600-$800	11647	510	4
+135	2	9	DRIVERS/TRAINEES NEEDED Veterans Welcome Earn $600-$800	11647	510	4
+678	2	11	Plumbing Apprentice	70636	10835	10
+679	2	11	Plumbing Apprentice	70636	10835	10
+675	2	11	Chocolateer	70386	11040	2
+676	2	11	Chocolateer	70386	11040	2
+677	2	11	Chocolateer	70386	11040	2
+642	2	15	Mold Press Machine Operator	67191	408	4
+643	2	15	Mold Press Machine Operator	67191	408	4
+644	2	15	Electronics Repair Technician	67191	414	4
+645	2	15	Electronics Repair Technician	67191	414	4
+273	2	17	Merchant Solutions Frontline Agent	22743	5362	6
+274	2	17	Merchant Solutions Frontline Agent	22743	5362	6
+275	2	17	Merchant Solutions Frontline Agent	22743	5362	1
+276	2	17	Merchant Solutions Frontline Agent	22743	5362	1
+558	2	21	Medical Assistant.	57231	2160	4
+556	2	21	Medical Assistant.	57231	2160	3
+557	2	21	Medical Assistant.	57231	2160	3
+587	2	22	Macy's Broward, Plantation, FL: Retail Sales Associate Career Fa	60395	3854	8
+588	2	22	Macy's Broward, Plantation, FL: Retail Sales Associate Career Fa	60395	3854	8
+585	2	22	Macy's Broward, Plantation, FL: Retail Sales Associate Career Fa	60395	3854	5
+586	2	22	Macy's Broward, Plantation, FL: Retail Sales Associate Career Fa	60395	3854	5
+359	2	24	Receptionist	32913	10312	0
+360	2	24	Receptionist	32913	10312	0
+361	2	24	Receptionist	32913	10312	0
+362	2	24	Receptionist	32913	10312	0
+646	2	39	Maintenance Tech	67191	413	8
+647	2	39	Maintenance Tech	67191	413	8
+576	2	39	Production Supervisor	59652	10545	4
+577	2	39	Production Supervisor	59652	10545	4
+578	2	39	Production Supervisor	59652	10545	4
+611	2	42	DRIVER / SERVICE REPRESENTATIVE	62860	1108	8
+612	2	42	DRIVER / SERVICE REPRESENTATIVE	62860	1108	8
+613	2	42	DRIVER / SERVICE REPRESENTATIVE	62860	1108	8
+136	2	44	Stevedores Supervisor	11647	482	4
+140	2	44	CONSTRUCTION Equipment Operators Pipe Fitters Semi-Skilled	11647	556	3
+141	2	44	CONSTRUCTION Equipment Operators Pipe Fitters Semi-Skilled	11647	556	3
+137	2	44	Stevedores Supervisor	11647	482	2
+138	2	44	Stevedores Supervisor	11647	482	2
+139	2	44	CONSTRUCTION Equipment Operators Pipe Fitters Semi-Skilled	11647	556	2
+401	2	45	Client Call Center Specialist	38075	11512	3
+402	2	45	Client Call Center Specialist	38075	11512	3
+403	2	45	Client Call Center Specialist	38075	11512	3
+404	2	45	Client Call Center Specialist	38075	11512	3
+405	2	45	Client Call Center Specialist	38075	11512	3
+406	2	45	Client Call Center Specialist	38075	11512	3
+533	2	46	Customer Service -Worcester	54988	10954	12
+534	2	46	Customer Service -Worcester	54988	10954	12
+535	2	46	Customer Service -Worcester	54988	10954	12
+536	2	46	Customer Service -Worcester	54988	10954	12
+834	2	46	HVAC Maintenance Mechanic for 300 Building Academic Campus	85864	6141	8
+835	2	46	HVAC Maintenance Mechanic for 300 Building Academic Campus	85864	6141	8
+836	2	46	HVAC Maintenance Mechanic for 300 Building Academic Campus	85864	6141	8
+837	2	46	HVAC Maintenance Mechanic for 300 Building Academic Campus	85864	6141	8
+838	2	46	HVAC Maintenance Mechanic for 300 Building Academic Campus	85864	6141	8
+839	9	16	Stockroom Attendant/Paint	86441	2385	8
+840	9	16	Stockroom Attendant/Paint	86441	2385	7
+841	9	16	Stockroom Attendant/Paint	86441	2385	7
+842	9	16	Stockroom Attendant/Paint	86441	2385	7
+843	9	16	Stockroom Attendant/Paint	86441	2385	7
+810	9	21	Medical Receptionist	82330	5754	3
+807	9	21	Medical Receptionist	82330	5754	2
+808	9	21	Medical Receptionist	82330	5754	2
+809	9	21	Medical Receptionist	82330	5754	2
+393	9	38	Macy's Town Center at Aurora, Aurora, CO: Retail Support Associa	35773	3759	2
+394	9	38	Macy's Town Center at Aurora, Aurora, CO: Retail Support Associa	35773	3759	2
+395	9	38	Macy's Town Center at Aurora, Aurora, CO: Retail Support Associa	35773	3759	2
+414	11	44	Security	39166	918	4
+415	11	44	Security	39166	918	4
+413	11	44	Security	39166	918	1
+541	29	49	MANUFACTURING ENGINEER	55399	11278	6
+542	29	49	MANUFACTURING ENGINEER	55399	11278	6
+543	29	49	MANUFACTURING ENGINEER	55399	11278	6
+544	29	49	MANUFACTURING ENGINEER	55399	11278	6
+579	31	10	Reimbursement Specialist	59954	7617	4
+580	31	10	Reimbursement Specialist	59954	7617	4
+581	31	10	Reimbursement Specialist	59954	7617	4
+582	31	10	Reimbursement Specialist	59954	7617	4
+157	31	24	Receptionist	12393	10312	7
+158	31	24	Receptionist	12393	10312	2
+159	31	24	Receptionist	12393	10312	2
+160	31	24	Receptionist	12393	10312	2
+161	31	24	Receptionist	12393	10312	2
+162	31	24	Receptionist	12393	10312	2
+163	31	24	Receptionist	12393	10312	2
+520	32	5	Information Assurance Officer	53789	2777	12
+518	32	5	Information Assurance Officer	53789	2777	3
+519	32	5	Information Assurance Officer	53789	2777	3
+459	32	10	Insurance Collections Representative	45378	490	4
+460	32	10	Insurance Collections Representative	45378	490	4
+461	32	10	Insurance Collections Representative	45378	490	4
+663	32	14	Residential Food Service Manager , Old Dominion University	68886	8444	2
+664	32	14	Residential Food Service Manager , Old Dominion University	68886	8444	2
+666	32	14	Residential Food Service Manager , Old Dominion University	68886	8444	2
+665	32	14	Residential Food Service Manager , Old Dominion University	68886	8444	1
+466	32	42	LEASING AGENT-Luxury Rental Propery seeking outgoing Leasing	45378	519	10
+467	32	42	LEASING AGENT-Luxury Rental Propery seeking outgoing Leasing	45378	519	10
+462	32	42	COLLECTOR/NEGOTIATOR	45378	524	4
+463	32	42	COLLECTOR/NEGOTIATOR	45378	524	3
+464	32	42	COLLECTOR/NEGOTIATOR	45378	524	3
+465	32	42	LEASING AGENT-Luxury Rental Propery seeking outgoing Leasing	45378	519	3
+671	39	44	DENTAL ASSISTANT - For dynamic surgical office	70307	470	2
+674	39	44	DENTAL ASSISTANT - For dynamic surgical office	70307	470	2
+672	39	44	DENTAL ASSISTANT - For dynamic surgical office	70307	470	1
+673	39	44	DENTAL ASSISTANT - For dynamic surgical office	70307	470	1
+589	61	2	MEDICAL- FRONT OFFICE	60742	2121	8
+590	61	2	MEDICAL- FRONT OFFICE	60742	2121	8
+591	61	2	MEDICAL- FRONT OFFICE	60742	2121	4
+648	61	6	Data Entry - full time	67396	460	8
+649	61	6	Data Entry - full time	67396	460	8
+650	61	6	Data Entry - full time	67396	460	8
+651	61	6	Data Entry - full time	67396	460	8
+652	61	6	Data Entry - full time	67396	460	8
+494	61	10	Patient Services Representative	49872	11573	6
+493	61	10	Patient Services Representative	49872	11573	4
+397	61	24	Receptionist	36979	10312	2
+398	61	24	Receptionist	36979	10312	2
+399	61	24	Receptionist	36979	10312	2
+400	61	24	Receptionist	36979	10312	2
+653	61	33	Administrative Assistant	67396	458	8
+654	61	33	Administrative Assistant	67396	458	8
+655	61	33	Administrative Assistant	67396	458	8
+656	61	33	Administrative Assistant	67396	458	5
+657	61	33	Administrative Assistant	67396	458	5
+439	61	35	Health Screening Technician	43411	6472	4
+440	61	35	Health Screening Technician	43411	6472	2
+441	61	35	Health Screening Technician	43411	6472	2
+658	61	42	SECTION 8 SPECIALIST Pompano Beach The Housing Authority	67396	497	5
+659	61	42	SECTION 8 SPECIALIST Pompano Beach The Housing Authority	67396	497	5
+660	61	42	SECTION 8 SPECIALIST Pompano Beach The Housing Authority	67396	497	5
+661	61	42	SECTION 8 SPECIALIST Pompano Beach The Housing Authority	67396	497	5
+662	61	42	SECTION 8 SPECIALIST Pompano Beach The Housing Authority	67396	497	5
+168	61	44	Front Desk / Receptionist	13079	908	6
+166	61	44	Front Desk / Receptionist	13079	908	4
+167	61	44	Front Desk / Receptionist	13079	908	4
+164	61	44	Trainer-Security	12679	780	4
+165	61	44	Trainer-Security	12679	780	4
+483	62	2	Billing/Accounts Receivable -	49513	2157	4
+484	62	2	Billing/Accounts Receivable -	49513	2157	4
+485	62	2	Billing/Accounts Receivable -	49513	2157	4
+0	62	2	MEDICAL- FRONT OFFICE	47	2121	3
+1	62	2	MEDICAL- FRONT OFFICE	47	2121	3
+2	62	2	MEDICAL- FRONT OFFICE	47	2121	3
+486	62	6	Inside Sales Representative	49513	7456	2
+487	62	6	Inside Sales Representative	49513	7456	2
+488	62	6	Inside Sales Representative	49513	7456	2
+692	62	11	Medical Sales	72227	1429	12
+693	62	11	Medical Sales	72227	1429	12
+572	62	12	Personal Banker (safe) 1	58939	9303	3
+573	62	12	Personal Banker (safe) 1	58939	9303	3
+506	62	13	Traning & Project Manager	50853	8708	5
+507	62	13	Traning & Project Manager	50853	8708	5
+508	62	13	Traning & Project Manager	50853	8708	5
+509	62	13	Traning & Project Manager	50853	8708	4
+626	62	21	Nurse	65399	11404	5
+627	62	21	Nurse	65399	11404	5
+625	62	21	Nurse	65399	11404	3
+816	62	47	Compensation Analyst	83595	7399	1
+817	62	47	Compensation Analyst	83595	7399	1
+142	69	44	Dental AssistantDP7801124 Orthodontist office looking	12117	1742	3
+407	70	15	Electronics Repair Technician	38227	414	3
+408	70	15	Electronics Repair Technician	38227	414	3
+409	70	15	Electronics Repair Technician	38227	414	3
+410	70	39	Maintenance Tech	38227	413	3
+411	70	39	Maintenance Tech	38227	413	3
+412	70	39	Maintenance Tech	38227	413	3
+256	75	25	FOOD SERVICES COOK - COORDINATOR	19889	1122	6
+257	75	25	FOOD SERVICES COOK - COORDINATOR	19889	1122	6
+258	75	25	FOOD SERVICES COOK - COORDINATOR	19889	1122	6
+19	121	16	Mail Sorters - Part Time Evenings	2638	6867	18
+20	121	16	Mail Sorters - Part Time Evenings	2638	6867	18
+21	121	16	Mail Sorters - Part Time Evenings	2638	6867	18
+22	121	16	Mail Sorters - Part Time Evenings	2638	6867	18
+828	121	17	Production Supervisor - Reading, PA	83876	8452	9
+829	121	17	Production Supervisor - Reading, PA	83876	8452	9
+830	121	17	Production Supervisor - Reading, PA	83876	8452	9
+831	121	17	Production Supervisor - Reading, PA	83876	8452	9
+832	121	17	Production Supervisor - Reading, PA	83876	8452	8
+833	121	17	Production Supervisor - Reading, PA	83876	8452	8
+182	121	24	Receptionist	14783	10312	4
+183	121	24	Receptionist	14783	10312	4
+184	121	24	Receptionist	14783	10312	4
+185	121	24	Receptionist	14783	10312	4
+188	121	24	Receptionist	14783	10312	4
+189	121	24	Receptionist	14783	10312	4
+190	121	24	Receptionist	14783	10312	4
+191	121	24	Receptionist	14783	10312	4
+186	121	24	Receptionist	14783	10312	1
+187	121	24	Receptionist	14783	10312	1
+712	121	44	Immediate Opening	74384	18	5
+713	121	44	Immediate Opening	74384	18	5
+714	121	44	Immediate Opening	74384	18	5
+715	121	44	Immediate Opening	74384	18	5
+716	121	44	Immediate Opening	74384	18	5
+717	121	44	Immediate Opening	74384	18	5
+718	121	44	Immediate Opening	74384	18	5
+471	122	16	Mail Sorters - Part Time Evenings	46180	6867	10
+472	122	16	Mail Sorters - Part Time Evenings	46180	6867	10
+473	122	16	Mail Sorters - Part Time Evenings	46180	6867	10
+474	122	16	Mail Sorters - Part Time Evenings	46180	6867	10
+475	122	16	Mail Sorters - Part Time Evenings	46180	6867	10
+476	122	16	Mail Sorters - Part Time Evenings	46180	6867	6
+719	122	33	Lead Generator / Inside Sales Representative	74465	7117	7
+720	122	33	Lead Generator / Inside Sales Representative	74465	7117	7
+721	122	33	Lead Generator / Inside Sales Representative	74465	7117	7
+722	122	33	Lead Generator / Inside Sales Representative	74465	7117	7
+723	122	33	Lead Generator / Inside Sales Representative	74465	7117	7
+724	122	33	Lead Generator / Inside Sales Representative	74465	7117	7
+725	122	33	Lead Generator / Inside Sales Representative	74465	7117	7
+125	122	39	Maintenance Tech	11316	413	8
+126	122	39	Maintenance Tech	11316	413	8
+127	122	39	Maintenance Tech	11316	413	8
+128	122	39	Maintenance Tech	11316	413	3
+129	122	39	Maintenance Tech	11316	413	3
+130	122	39	Maintenance Tech	11316	413	3
+131	122	39	Maintenance Tech	11316	413	3
+132	122	39	Maintenance Tech	11316	413	3
+620	122	45	Billing Specialist	64014	8813	4
+621	122	45	Billing Specialist	64014	8813	4
+622	122	45	Billing Specialist	64014	8813	4
+623	122	45	Billing Specialist	64014	8813	3
+624	122	45	Billing Specialist	64014	8813	3
+563	130	24	Receptionist	57795	10312	5
+564	130	24	Receptionist	57795	10312	5
+565	130	24	Receptionist	57795	10312	5
+566	130	24	Receptionist	57795	10312	5
+567	130	24	Receptionist	57795	10312	5
+568	130	24	Receptionist	57795	10312	5
+44	137	26	Macy's Center City, Philadelphia, PA: Assistant Store Manager	6288	3661	12
+45	137	26	Macy's Center City, Philadelphia, PA: Assistant Store Manager	6288	3661	12
+46	137	26	Macy's Center City, Philadelphia, PA: Assistant Store Manager	6288	3661	12
+47	137	26	Macy's Center City, Philadelphia, PA: Assistant Store Manager	6288	3661	12
+48	137	26	Macy's Center City, Philadelphia, PA: Assistant Store Manager	6288	3661	12
+49	137	26	Macy's Center City, Philadelphia, PA: Assistant Store Manager	6288	3661	12
+667	144	11	Field Service Technician	69019	8872	2
+668	144	11	Field Service Technician	69019	8872	2
+669	144	11	Field Service Technician	69019	8872	2
+670	144	11	Field Service Technician	69019	8872	2
+348	145	4	EXECUTIVE ADMINISTRATIVE ASSISTANT	32794	7113	4
+352	145	4	EXECUTIVE ADMINISTRATIVE ASSISTANT	32794	7113	2
+350	145	4	EXECUTIVE ADMINISTRATIVE ASSISTANT	32794	7113	1
+351	145	4	EXECUTIVE ADMINISTRATIVE ASSISTANT	32794	7113	1
+349	145	4	EXECUTIVE ADMINISTRATIVE ASSISTANT	32794	7113	0
+617	156	44	Stevedores Supervisor	63706	482	8
+618	156	44	Stevedores Supervisor	63706	482	8
+619	156	44	Stevedores Supervisor	63706	482	4
+12	159	21	Medical Records Tech	769	7620	18
+13	159	21	Medical Records Tech	769	7620	18
+14	159	21	Medical Records Tech	769	7620	18
+15	159	21	Medical Records Tech	769	7620	18
+16	159	21	Medical Records Tech	769	7620	18
+525	159	21	Associate Legal and Compliance Counsel	54408	11216	12
+526	159	21	Associate Legal and Compliance Counsel	54408	11216	12
+527	159	21	Associate Legal and Compliance Counsel	54408	11216	12
+528	159	21	Associate Legal and Compliance Counsel	54408	11216	12
+529	159	21	Associate Legal and Compliance Counsel	54408	11216	12
+336	159	21	Medical Secretary	30776	11230	5
+337	159	21	Medical Secretary	30776	11230	5
+334	159	21	Medical Secretary	30776	11230	3
+335	159	21	Medical Secretary	30776	11230	3
+778	160	24	Receptionist	78324	10312	3
+779	160	24	Receptionist	78324	10312	3
+780	160	24	Receptionist	78324	10312	3
+811	162	16	EDUCATIONAL SPECIALIST	82750	2545	3
+812	162	16	EDUCATIONAL SPECIALIST	82750	2545	3
+813	162	16	EDUCATIONAL SPECIALIST	82750	2545	1
+814	162	16	EDUCATIONAL SPECIALIST	82750	2545	1
+815	162	16	EDUCATIONAL SPECIALIST	82750	2545	1
+451	167	10	Insurance Verifier - Pharmacy Benefits	45321	7385	5
+452	167	10	Insurance Verifier - Pharmacy Benefits	45321	7385	5
+453	167	10	Insurance Verifier - Pharmacy Benefits	45321	7385	5
+454	167	10	Insurance Verifier - Pharmacy Benefits	45321	7385	5
+455	167	24	Receptionist	45321	10312	5
+456	167	24	Receptionist	45321	10312	5
+457	167	24	Receptionist	45321	10312	5
+458	167	24	Receptionist	45321	10312	5
+396	167	33	Executive Recruiter	36193	1495	2
+847	168	33	ENTRY LEVEL PHARMACEUTICAL SALES * Salary+Car+Benefits+ * Forest	88043	2452	10
+848	168	33	ENTRY LEVEL PHARMACEUTICAL SALES * Salary+Car+Benefits+ * Forest	88043	2452	10
+177	172	15	ASSISTANT BRANCH  MANAGER- NEW YORK, NY 10022	14307	1348	4
+178	172	15	ASSISTANT BRANCH  MANAGER- NEW YORK, NY 10022	14307	1348	3
+801	179	49	MANUFACTURING ENGINEER	81464	11277	4
+802	179	49	MANUFACTURING ENGINEER	81464	11277	4
+319	181	1	Macy's Florence Mall, Florence, KY: Retail Cosmetics Sales - Bea	26980	3517	14
+320	181	1	Macy's Florence Mall, Florence, KY: Retail Cosmetics Sales - Bea	26980	3517	14
+321	181	1	Macy's Florence Mall, Florence, KY: Retail Cosmetics Sales - Bea	26980	3517	14
+269	181	4	Warehouse / Electronic Assembly	22358	7187	6
+270	181	4	Warehouse / Electronic Assembly	22358	7187	6
+271	181	8	Sr. Financial Analyst - Hyperion	22358	2527	6
+272	181	8	Sr. Financial Analyst - Hyperion	22358	2527	6
+592	181	16	Assistant Manager	61301	7628	4
+593	181	16	Assistant Manager	61301	7628	4
+594	181	16	Assistant Manager	61301	7628	4
+595	181	16	Assistant Manager	61301	7628	4
+143	181	33	Sales and Hiring Manager	12124	2577	4
+144	181	33	Sales and Hiring Manager	12124	2577	4
+145	181	33	Sales and Hiring Manager	12124	2577	4
+146	181	33	Sales and Hiring Manager	12124	2577	4
+147	181	44	FT Leasing Consultant DP7796890 Needed for properties	12124	1739	4
+148	181	44	FT Leasing Consultant DP7796890 Needed for properties	12124	1739	4
+149	181	44	FT Leasing Consultant DP7796890 Needed for properties	12124	1739	4
+150	181	44	FT Leasing Consultant DP7796890 Needed for properties	12124	1739	4
+122	182	6	Data Entry - full time	9718	460	8
+123	182	6	Data Entry - full time	9718	460	8
+124	182	6	Data Entry - full time	9718	460	8
+477	182	17	Controls Engineer	46263	1521	6
+490	182	39	Administrative Asst - Part Time	49550	1902	4
+489	182	39	Administrative Asst - Part Time	49550	1902	2
+491	182	44	RECEPTIONIST FULL TIME	49550	1906	4
+492	182	44	RECEPTIONIST FULL TIME	49550	1906	4
+495	187	6	SERVICE ADVISOR PRESTIGE AUDI	50045	7090	6
+496	187	6	SERVICE ADVISOR PRESTIGE AUDI	50045	7090	6
+497	187	6	SERVICE ADVISOR PRESTIGE AUDI	50045	7090	6
+498	187	6	SERVICE ADVISOR PRESTIGE AUDI	50045	7090	6
+803	187	9	DRIVERS/TRAINEES NEEDED Veterans Welcome Earn $600-$800	81740	510	1
+804	187	9	DRIVERS/TRAINEES NEEDED Veterans Welcome Earn $600-$800	81740	510	1
+775	187	44	PROPERTY MANAGER - for established shopping center RE co	78248	532	3
+776	187	44	PROPERTY MANAGER - for established shopping center RE co	78248	532	3
+777	187	44	PROPERTY MANAGER - for established shopping center RE co	78248	532	3
+537	189	9	Maintenance Specialist	55153	745	12
+538	189	9	Maintenance Specialist	55153	745	6
+539	189	9	Maintenance Specialist	55153	745	6
+559	189	39	Assembly and Machine Operation	57699	6309	4
+560	189	39	Assembly and Machine Operation	57699	6309	4
+561	189	43	Senior Software Engineer	57699	10467	4
+562	189	43	Senior Software Engineer	57699	10467	4
+265	196	44	CITY OF OAKLAND PARK INFORMATION TECHNOLOGY SPECIALIST Microsoft	21087	511	7
+266	196	44	CITY OF OAKLAND PARK INFORMATION TECHNOLOGY SPECIALIST Microsoft	21087	511	7
+62	197	9	Maintenance Specialist	7709	745	7
+63	197	9	Maintenance Specialist	7709	745	7
+64	197	9	Maintenance Specialist	7709	745	7
+65	197	15	ASSISTANT BRANCH  MANAGER- NEW YORK, NY 10022	7709	1348	7
+66	197	15	ASSISTANT BRANCH  MANAGER- NEW YORK, NY 10022	7709	1348	3
+67	197	15	ASSISTANT BRANCH  MANAGER- NEW YORK, NY 10022	7709	1348	3
+68	197	33	Regional Sales Manager	7709	11203	3
+69	197	33	Regional Sales Manager	7709	11203	3
+70	197	33	Regional Sales Manager	7709	11203	3
+71	197	49	Commercial Roofing Manager	7709	11208	3
+72	197	49	Commercial Roofing Manager	7709	11208	1
+73	197	49	Commercial Roofing Manager	7709	11208	1
+540	202	13	Organizational Effectiveness Manager - Employee Development	55346	2656	6
+852	202	29	Buyer/Planner -	89858	11011	10
+853	202	29	Buyer/Planner -	89858	11011	10
+854	202	29	Buyer/Planner -	89858	11011	10
+855	202	29	Buyer/Planner -	89858	11011	10
+856	202	29	Buyer/Planner -	89858	11011	10
+468	204	5	Project Engineer	45539	10465	10
+469	204	5	Project Engineer	45539	10465	10
+470	204	5	Project Engineer	45539	10465	10
+282	210	44	MENTAL HEALTH CASE MANAGER	24273	232	8
+283	210	44	MENTAL HEALTH CASE MANAGER	24273	232	8
+284	210	44	MENTAL HEALTH CASE MANAGER	24273	232	8
+281	210	44	MENTAL HEALTH CASE MANAGER	24273	232	1
+726	212	17	Test Technician	74570	2435	7
+727	212	17	Test Technician	74570	2435	6
+728	212	17	Test Technician	74570	2435	6
+628	219	44	HOTEL HOUSEKEEPER Housekeeping/Laundry Aide	66111	1898	5
+629	219	44	HOTEL HOUSEKEEPER Housekeeping/Laundry Aide	66111	1898	5
+680	235	16	EDUCATIONAL SPECIALIST	71028	2545	10
+681	235	16	EDUCATIONAL SPECIALIST	71028	2545	10
+682	235	16	EDUCATIONAL SPECIALIST	71028	2545	10
+683	235	16	EDUCATIONAL SPECIALIST	71028	2545	10
+59	237	33	SALES REP	6752	2547	7
+60	237	33	SALES REP	6752	2547	7
+61	237	33	SALES REP	6752	2547	7
+57	237	33	SALES REP	6752	2547	4
+58	237	33	SALES REP	6752	2547	4
+418	240	22	Macy's Water Tower Place, Chicago, IL: Retail Sales Associate, F	39875	3705	4
+422	240	22	Macy's Water Tower Place, Chicago, IL: Retail Sales Associate, F	39875	3705	4
+419	240	22	Macy's Water Tower Place, Chicago, IL: Retail Sales Associate, F	39875	3705	2
+420	240	22	Macy's Water Tower Place, Chicago, IL: Retail Sales Associate, F	39875	3705	2
+421	240	22	Macy's Water Tower Place, Chicago, IL: Retail Sales Associate, F	39875	3705	2
+322	243	38	Macy's Moreno Valley Mall, Moreno Valley, CA:: Administrative Su	29409	3679	14
+323	243	38	Macy's Moreno Valley Mall, Moreno Valley, CA:: Administrative Su	29409	3679	14
+324	243	38	Macy's Moreno Valley Mall, Moreno Valley, CA:: Administrative Su	29409	3679	13
+325	243	38	Macy's Moreno Valley Mall, Moreno Valley, CA:: Administrative Su	29409	3679	13
+791	245	6	Carpet Cleaning Technician- Franchise	81354	8685	3
+792	245	6	Carpet Cleaning Technician- Franchise	81354	8685	3
+793	245	6	Carpet Cleaning Technician- Franchise	81354	8685	3
+794	245	6	Carpet Cleaning Technician- Franchise	81354	8685	3
+795	245	6	Carpet Cleaning Technician- Franchise	81354	8685	2
+799	245	11	Plumbing Apprentice	81354	10835	4
+800	245	11	Plumbing Apprentice	81354	10835	4
+796	245	11	Plumbing Apprentice	81354	10835	2
+797	245	11	Plumbing Apprentice	81354	10835	2
+798	245	11	Plumbing Apprentice	81354	10835	2
+433	247	24	Underwriter I	41313	10998	4
+434	247	24	Underwriter I	41313	10998	4
+435	247	24	Underwriter I	41313	10998	4
+436	247	24	Underwriter I	41313	10998	4
+504	248	4	Forklift Operator	50510	7120	5
+505	248	4	Forklift Operator	50510	7120	5
+503	248	4	Forklift Operator	50510	7120	4
+151	249	9	Domestic Violence	12189	370	7
+152	249	9	Domestic Violence	12189	370	7
+153	249	9	Domestic Violence	12189	370	7
+154	249	9	Domestic Violence	12189	370	7
+155	249	9	Domestic Violence	12189	370	7
+156	249	9	Domestic Violence	12189	370	7
+75	249	9	PROGRAM SPECIALIST	7904	896	5
+76	249	9	PROGRAM SPECIALIST	7904	896	5
+77	249	9	PROGRAM SPECIALIST	7904	896	5
+74	249	9	PROGRAM SPECIALIST	7904	896	1
+423	249	16	EDUCATIONAL SPECIALIST	40493	2545	4
+424	249	16	EDUCATIONAL SPECIALIST	40493	2545	4
+425	249	16	EDUCATIONAL SPECIALIST	40493	2545	4
+426	249	16	EDUCATIONAL SPECIALIST	40493	2545	1
+427	249	16	EDUCATIONAL SPECIALIST	40493	2545	1
+428	249	16	EDUCATIONAL SPECIALIST	40493	2545	1
+684	251	24	Letter of Credit Specialist	72028	2821	10
+685	251	24	Letter of Credit Specialist	72028	2821	10
+686	251	24	Letter of Credit Specialist	72028	2821	10
+687	251	24	Letter of Credit Specialist	72028	2821	10
+688	251	49	Senior Internal Auditor	72028	6862	12
+689	251	49	Senior Internal Auditor	72028	6862	12
+690	251	49	Senior Internal Auditor	72028	6862	12
+691	251	49	Senior Internal Auditor	72028	6862	12
+169	264	17	DRAFTER	13817	1109	6
+170	264	17	DRAFTER	13817	1109	6
+171	264	17	DRAFTER	13817	1109	6
+172	264	17	DRAFTER	13817	1109	6
+338	264	42	SUPERINTENDENT	32325	11	5
+339	264	42	SUPERINTENDENT	32325	11	5
+340	264	42	SUPERINTENDENT	32325	11	5
+341	264	42	SUPERINTENDENT	32325	11	4
+342	264	42	SUPERINTENDENT	32325	11	4
+343	264	42	SUPERINTENDENT	32325	11	4
+173	264	44	WAREHOUSE ASSOCIATES FULL-TIME & PART-TIM	13817	1116	6
+174	264	44	WAREHOUSE ASSOCIATES FULL-TIME & PART-TIM	13817	1116	4
+175	264	44	WAREHOUSE ASSOCIATES FULL-TIME & PART-TIM	13817	1116	4
+176	264	44	WAREHOUSE ASSOCIATES FULL-TIME & PART-TIM	13817	1116	4
+789	266	9	Marketing Communications Coordinator	80722	2101	3
+790	266	9	Marketing Communications Coordinator	80722	2101	3
+786	266	9	Marketing Communications Coordinator	80722	2101	1
+787	266	9	Marketing Communications Coordinator	80722	2101	1
+788	266	9	Marketing Communications Coordinator	80722	2101	1
+521	272	9	Maintenance Specialist	54064	745	12
+522	272	9	Maintenance Specialist	54064	745	12
+499	272	9	Accounting	50336	11383	6
+500	272	9	Accounting	50336	11383	4
+501	272	9	Accounting	50336	11383	4
+502	272	9	Accounting	50336	11383	4
+523	272	49	Commercial Roofing Manager	54064	11208	12
+524	272	49	Commercial Roofing Manager	54064	11208	12
+181	294	42	METAL FABRICATION MACHINISTS & WELDER-FITTERS	14404	924	4
+179	294	42	METAL FABRICATION MACHINISTS & WELDER-FITTERS	14404	924	3
+180	294	42	METAL FABRICATION MACHINISTS & WELDER-FITTERS	14404	924	3
+449	302	19	SALES	44025	1121	5
+450	302	19	SALES	44025	1121	5
+80	302	19	ADVERTISING SALES REP	8776	951	4
+81	302	19	ADVERTISING SALES REP	8776	951	4
+84	302	19	ADVERTISING SALES REP	8776	951	4
+85	302	19	ADVERTISING SALES REP	8776	951	4
+86	302	19	ADVERTISING SALES REP	8776	951	4
+87	302	19	ADVERTISING SALES REP	8776	951	4
+445	302	19	SALES	44025	1121	4
+446	302	19	SALES	44025	1121	4
+447	302	19	SALES	44025	1121	4
+448	302	19	SALES	44025	1121	4
+88	302	19	ADVERTISING SALES REP	8776	951	3
+82	302	19	ADVERTISING SALES REP	8776	951	2
+83	302	19	ADVERTISING SALES REP	8776	951	2
+442	302	19	SALES	44025	1121	2
+443	302	19	SALES	44025	1121	2
+444	302	19	SALES	44025	1121	2
+596	309	16	Sales/Executive Assistant	61587	2888	5
+597	309	16	Sales/Executive Assistant	61587	2888	5
+598	309	16	Sales/Executive Assistant	61587	2888	5
+599	309	16	Sales/Executive Assistant	61587	2888	5
+600	309	16	Sales/Executive Assistant	61587	2888	5
+601	309	16	Sales/Executive Assistant	61587	2888	4
+602	309	16	Sales/Executive Assistant	61587	2888	4
+603	309	16	Sales/Executive Assistant	61587	2888	4
+604	309	16	Sales/Executive Assistant	61587	2888	4
+510	309	45	Manager - Client Service Job	52075	8331	4
+511	309	45	Manager - Client Service Job	52075	8331	4
+512	309	45	Manager - Client Service Job	52075	8331	4
+513	309	45	Manager - Client Service Job	52075	8331	3
+514	309	45	Manager - Client Service Job	52075	8331	3
+517	309	45	Manager - Client Service Job	52075	8331	3
+515	309	45	Manager - Client Service Job	52075	8331	1
+516	309	45	Manager - Client Service Job	52075	8331	1
+696	332	9	ELECTRO-MECHANICAL TECHNICIAN	72229	8290	14
+694	332	9	ELECTRO-MECHANICAL TECHNICIAN	72229	8290	12
+695	332	9	ELECTRO-MECHANICAL TECHNICIAN	72229	8290	12
+478	332	14	Provider Service Rep II	47215	5764	6
+479	332	14	Provider Service Rep II	47215	5764	6
+480	332	14	Provider Service Rep II	47215	5764	6
+481	332	14	Provider Service Rep II	47215	5764	6
+482	332	14	Provider Service Rep II	47215	5764	4
+769	336	45	Outside Advertising Sales Assistant	78106	10827	6
+770	336	45	Outside Advertising Sales Assistant	78106	10827	6
+771	336	45	Outside Advertising Sales Assistant	78106	10827	6
+772	336	45	Outside Advertising Sales Assistant	78106	10827	2
+773	336	45	Outside Advertising Sales Assistant	78106	10827	2
+774	336	45	Outside Advertising Sales Assistant	78106	10827	2
+387	339	5	Project Manager Construction Manager	35547	2100	2
+388	339	5	Project Manager Construction Manager	35547	2100	2
+389	339	5	Project Manager Construction Manager	35547	2100	2
+390	339	5	Project Manager Construction Manager	35547	2100	2
+391	339	5	Project Manager Construction Manager	35547	2100	2
+392	339	5	Project Manager Construction Manager	35547	2100	2
+431	339	16	Flexo Operator 3100	41240	7601	4
+432	339	16	Flexo Operator 3100	41240	7601	4
+429	339	16	Flexo Operator 3100	41240	7601	2
+430	339	16	Flexo Operator 3100	41240	7601	2
+277	339	44	FT Leasing Consultant DP7796890 Needed for properties	22789	1739	1
+278	339	44	FT Leasing Consultant DP7796890 Needed for properties	22789	1739	1
+279	339	44	FT Leasing Consultant DP7796890 Needed for properties	22789	1739	1
+280	339	44	FT Leasing Consultant DP7796890 Needed for properties	22789	1739	1
+91	342	9	Customer Service Rep	9280	450	3
+92	342	9	Customer Service Rep	9280	450	3
+93	342	9	Customer Service Rep	9280	450	3
+94	342	9	Customer Service Rep	9280	450	3
+95	342	9	DRIVERS/TRAINEES NEEDED Veterans Welcome Earn $600-$800	9280	510	3
+96	342	9	DRIVERS/TRAINEES NEEDED Veterans Welcome Earn $600-$800	9280	510	3
+97	342	9	DRIVERS/TRAINEES NEEDED Veterans Welcome Earn $600-$800	9280	510	3
+98	342	9	DRIVERS/TRAINEES NEEDED Veterans Welcome Earn $600-$800	9280	510	3
+781	342	11	Data Entry/Administrative Assistant	80257	11033	1
+782	342	11	Data Entry/Administrative Assistant	80257	11033	1
+783	342	11	Data Entry/Administrative Assistant	80257	11033	1
+784	342	11	Data Entry/Administrative Assistant	80257	11033	1
+785	342	11	Data Entry/Administrative Assistant	80257	11033	1
+367	342	17	Maintenance/Electrical & Process Engineer, QA Tech, Mfg Tech	33895	10805	2
+363	342	17	Maintenance/Electrical & Process Engineer, QA Tech, Mfg Tech	33895	10805	1
+364	342	17	Maintenance/Electrical & Process Engineer, QA Tech, Mfg Tech	33895	10805	1
+365	342	17	Maintenance/Electrical & Process Engineer, QA Tech, Mfg Tech	33895	10805	1
+366	342	17	Maintenance/Electrical & Process Engineer, QA Tech, Mfg Tech	33895	10805	1
+99	342	33	Administrative Assistant	9280	458	4
+100	342	33	Administrative Assistant	9280	458	4
+101	342	33	Administrative Assistant	9280	458	4
+102	342	33	Administrative Assistant	9280	458	4
+356	342	39	Onsite Staffing Coordinator	32894	6310	3
+357	342	39	Onsite Staffing Coordinator	32894	6310	3
+358	342	39	Onsite Staffing Coordinator	32894	6310	3
+353	342	39	Onsite Staffing Coordinator	32894	6310	2
+354	342	39	Onsite Staffing Coordinator	32894	6310	2
+355	342	39	Onsite Staffing Coordinator	32894	6310	2
+103	342	44	cook/line	9280	454	4
+104	342	44	cook/line	9280	454	2
+105	342	44	cook/line	9280	454	2
+106	342	44	cook/line	9280	454	2
+107	342	44	PEST CONTROL/LAWN TECH - Exp preferred, must speak Eng, Clean Dr	9280	501	2
+108	342	44	PEST CONTROL/LAWN TECH - Exp preferred, must speak Eng, Clean Dr	9280	501	2
+109	342	44	PEST CONTROL/LAWN TECH - Exp preferred, must speak Eng, Clean Dr	9280	501	2
+110	342	44	PEST CONTROL/LAWN TECH - Exp preferred, must speak Eng, Clean Dr	9280	501	2
+113	342	46	CUSTOMER SERVICE REPRESENTATIVE	9280	481	5
+114	342	46	CUSTOMER SERVICE REPRESENTATIVE	9280	481	5
+111	342	46	CUSTOMER SERVICE REPRESENTATIVE	9280	481	2
+112	342	46	CUSTOMER SERVICE REPRESENTATIVE	9280	481	2
+242	343	5	SEO Specialist	17028	10793	4
+240	343	5	SEO Specialist	17028	10793	3
+241	343	5	SEO Specialist	17028	10793	3
+374	427	44	Client Care  Representative  Are you happy	34707	3272	3
+375	427	44	Client Care  Representative  Are you happy	34707	3272	3
+376	427	44	Client Care  Representative  Are you happy	34707	3272	3
+377	427	44	Client Care  Representative  Are you happy	34707	3272	3
+379	427	44	Client Care  Representative  Are you happy	34707	3272	2
+378	427	44	Client Care  Representative  Are you happy	34707	3272	1
+729	429	8	Mid-Level Java Application Engineer	75691	6133	6
+730	429	8	Mid-Level Java Application Engineer	75691	6133	6
+731	429	8	Mid-Level Java Application Engineer	75691	6133	6
+732	429	8	Mid-Level Java Application Engineer	75691	6133	6
+733	429	8	Mid-Level Java Application Engineer	75691	6133	6
+734	429	8	Mid-Level Java Application Engineer	75691	6133	6
+735	429	8	Mid-Level Java Application Engineer	75691	6133	6
+736	429	8	Mid-Level Java Application Engineer	75691	6133	6
+605	433	33	Sales / Account Manager	62197	5443	5
+606	433	33	Sales / Account Manager	62197	5443	5
+607	433	33	Sales / Account Manager	62197	5443	5
+608	433	33	Sales / Account Manager	62197	5443	5
+609	433	33	Sales / Account Manager	62197	5443	5
+610	433	33	Sales / Account Manager	62197	5443	5
+252	437	16	Millwright	18553	6007	6
+253	437	16	Millwright	18553	6007	6
+254	437	16	Millwright	18553	6007	6
+255	437	16	Millwright	18553	6007	6
+246	437	16	Millwright	18553	6007	5
+247	437	16	Millwright	18553	6007	5
+248	437	16	Millwright	18553	6007	5
+249	437	16	Millwright	18553	6007	5
+250	437	16	Millwright	18553	6007	5
+251	437	16	Millwright	18553	6007	5
+50	440	13	SQL DBA	6524	1285	12
+51	440	13	SQL DBA	6524	1285	12
+52	440	13	SQL DBA	6524	1285	12
+53	440	13	SQL DBA	6524	1285	12
+54	440	13	SQL DBA	6524	1285	12
+55	440	13	SQL DBA	6524	1285	4
+56	440	13	SQL DBA	6524	1285	4
+346	451	24	Receptionist	32653	10312	4
+347	451	24	Receptionist	32653	10312	4
+26	451	46	Restaurant / Hospitality / Retail Exp: Entry Level Opening	4022	6991	3
+17	452	16	Mail Sorters - Part Time Evenings	1113	6867	18
+18	452	16	Mail Sorters - Part Time Evenings	1113	6867	18
+78	452	34	Class A & B Drivers	8685	7109	5
+79	452	34	Class A & B Drivers	8685	7109	5
+575	452	42	Welder-Fabricator	59565	770	4
+574	452	42	Welder-Fabricator	59565	770	3
+583	452	44	Driver	60213	60	5
+584	452	44	Driver	60213	60	5
+416	454	24	Receptionist	39748	10312	4
+417	454	24	Receptionist	39748	10312	4
+805	459	44	Trainer-Security	81882	780	2
+806	459	44	Trainer-Security	81882	780	2
+298	481	24	Receptionist	25479	10312	5
+299	481	24	Receptionist	25479	10312	5
+300	481	24	Receptionist	25479	10312	5
+301	481	24	Receptionist	25479	10312	5
+302	481	24	Receptionist	25479	10312	5
+303	481	24	Receptionist	25479	10312	5
+304	481	24	Receptionist	25479	10312	5
+305	481	24	Receptionist	25479	10312	5
+306	481	24	Receptionist	25479	10312	5
+307	481	24	Receptionist	25479	10312	3
+759	482	6	Data Entry - full time	77970	460	6
+760	482	6	Data Entry - full time	77970	460	6
+205	482	6	Sales Administrative Assistant	16745	10765	5
+206	482	6	Sales Administrative Assistant	16745	10765	5
+207	482	6	Sales Administrative Assistant	16745	10765	5
+202	482	6	Sales Administrative Assistant	16745	10765	4
+203	482	6	Sales Administrative Assistant	16745	10765	4
+204	482	6	Sales Administrative Assistant	16745	10765	4
+208	482	6	Sales Administrative Assistant	16745	10765	4
+209	482	6	Sales Administrative Assistant	16745	10765	4
+753	482	6	Data Entry - full time	77970	460	4
+754	482	6	Data Entry - full time	77970	460	4
+755	482	6	Data Entry - full time	77970	460	4
+756	482	6	Data Entry - full time	77970	460	3
+757	482	6	Data Entry - full time	77970	460	3
+758	482	6	Data Entry - full time	77970	460	3
+210	482	10	Concrete/ Sealcoat Laborers	16745	11464	6
+211	482	10	Concrete/ Sealcoat Laborers	16745	11464	6
+212	482	10	Concrete/ Sealcoat Laborers	16745	11464	6
+213	482	10	Concrete/ Sealcoat Laborers	16745	11464	6
+214	482	10	Concrete/ Sealcoat Laborers	16745	11464	6
+215	482	10	Concrete/ Sealcoat Laborers	16745	11464	6
+216	482	10	Concrete/ Sealcoat Laborers	16745	11464	3
+217	482	10	Concrete/ Sealcoat Laborers	16745	11464	3
+383	482	16	Maintenance Manager	35066	10292	4
+384	482	16	Maintenance Manager	35066	10292	4
+385	482	16	Maintenance Manager	35066	10292	4
+386	482	16	Maintenance Manager	35066	10292	4
+380	482	16	Maintenance Manager	35066	10292	2
+381	482	16	Maintenance Manager	35066	10292	2
+382	482	16	Maintenance Manager	35066	10292	2
+761	482	33	Administrative Assistant	77970	458	6
+762	482	33	Administrative Assistant	77970	458	6
+763	482	33	Administrative Assistant	77970	458	6
+764	482	33	Administrative Assistant	77970	458	6
+765	482	33	Administrative Assistant	77970	458	6
+766	482	33	Administrative Assistant	77970	458	6
+767	482	33	Administrative Assistant	77970	458	6
+768	482	33	Administrative Assistant	77970	458	6
+35	482	41	MDNOW Urgent Care Front Desk	4107	550	3
+36	482	41	MDNOW Urgent Care Front Desk	4107	550	3
+37	482	41	MDNOW Urgent Care Front Desk	4107	550	3
+38	482	41	MDNOW Urgent Care Front Desk	4107	550	3
+39	482	41	MDNOW Urgent Care Front Desk	4107	550	3
+40	482	41	MDNOW Urgent Care Front Desk	4107	550	2
+218	482	45	Client Call Center Specialist	16745	11512	3
+223	482	45	Client Call Center Specialist	16745	11512	3
+224	482	45	Client Call Center Specialist	16745	11512	3
+225	482	45	Client Call Center Specialist	16745	11512	3
+221	482	45	Client Call Center Specialist	16745	11512	2
+222	482	45	Client Call Center Specialist	16745	11512	2
+219	482	45	Client Call Center Specialist	16745	11512	1
+220	482	45	Client Call Center Specialist	16745	11512	1
+226	482	46	Part-time Administrative Coordinator	16745	6469	3
+233	482	46	Part-time Administrative Coordinator	16745	6469	3
+230	482	46	Part-time Administrative Coordinator	16745	6469	2
+231	482	46	Part-time Administrative Coordinator	16745	6469	2
+227	482	46	Part-time Administrative Coordinator	16745	6469	1
+228	482	46	Part-time Administrative Coordinator	16745	6469	1
+229	482	46	Part-time Administrative Coordinator	16745	6469	1
+232	482	46	Part-time Administrative Coordinator	16745	6469	1
+705	497	44	Client Care  Representative  Are you happy	73539	3272	6
+706	497	44	Client Care  Representative  Are you happy	73539	3272	6
+707	497	44	Client Care  Representative  Are you happy	73539	3272	6
+708	497	44	Client Care  Representative  Are you happy	73539	3272	6
+709	497	44	Client Care  Representative  Are you happy	73539	3272	6
+710	497	44	Client Care  Representative  Are you happy	73539	3272	6
+711	497	44	Client Care  Representative  Are you happy	73539	3272	6
+23	511	2	MEDICAL- FRONT OFFICE	2652	2121	18
+24	511	2	MEDICAL- FRONT OFFICE	2652	2121	3
+25	511	2	MEDICAL- FRONT OFFICE	2652	2121	3
+262	519	42	CLERICAL, F/T Doctors office seeks motivated indiv, will	20346	1840	7
+263	519	42	CLERICAL, F/T Doctors office seeks motivated indiv, will	20346	1840	7
+264	519	42	CLERICAL, F/T Doctors office seeks motivated indiv, will	20346	1840	7
+259	519	42	CLERICAL, F/T Doctors office seeks motivated indiv, will	20346	1840	6
+260	519	42	CLERICAL, F/T Doctors office seeks motivated indiv, will	20346	1840	6
+261	519	42	CLERICAL, F/T Doctors office seeks motivated indiv, will	20346	1840	6
+192	538	11	Medical Sales	14937	1429	3
+193	538	11	Medical Sales	14937	1429	3
+194	538	11	Medical Sales	14937	1429	3
+195	538	11	Medical Sales	14937	1429	3
+196	538	11	Medical Sales	14937	1429	3
+197	538	11	Medical Sales	14937	1429	0
+198	538	11	Medical Sales	14937	1429	0
+3	542	16	Personal Assistant - Administrative Assistants (FT or PT)	553	957	3
+4	542	16	Personal Assistant - Administrative Assistants (FT or PT)	553	957	2
+5	542	16	Personal Assistant - Administrative Assistants (FT or PT)	553	957	2
+234	545	6	Sales Administrative Assistant	16834	10765	3
+235	545	6	Sales Administrative Assistant	16834	10765	3
+236	545	6	Sales Administrative Assistant	16834	10765	3
+237	545	46	Part-time Administrative Coordinator	16834	6469	3
+238	545	46	Part-time Administrative Coordinator	16834	6469	3
+239	545	46	Part-time Administrative Coordinator	16834	6469	3
+437	546	29	Buyer/Planner -	42324	11011	4
+438	546	29	Buyer/Planner -	42324	11011	4
+6	549	2	Administrative Assistant	554	40	18
+7	549	2	Administrative Assistant	554	40	18
+8	549	16	Personal Assistant - Administrative Assistants (FT or PT)	554	957	18
+9	549	16	Personal Assistant - Administrative Assistants (FT or PT)	554	957	18
+10	549	44	Immediate Opening	554	18	18
+11	549	44	Immediate Opening	554	18	18
+569	549	46	Call Center Customer Service Agent	58693	11160	3
+570	549	46	Call Center Customer Service Agent	58693	11160	3
+571	549	46	Call Center Customer Service Agent	58693	11160	3
+295	552	34	Product Application Specialist	25151	11307	5
+296	552	34	Product Application Specialist	25151	11307	5
+297	552	34	Product Application Specialist	25151	11307	5
+697	553	2	Administrative Assistant	72435	40	14
+698	553	2	Administrative Assistant	72435	40	14
+699	553	16	Personal Assistant - Administrative Assistants (FT or PT)	72435	957	14
+700	553	16	Personal Assistant - Administrative Assistants (FT or PT)	72435	957	14
+701	553	44	PAYROLL CLERK; PT	72435	46	14
+702	553	44	PAYROLL CLERK; PT	72435	46	14
+703	553	44	Driver	72435	60	14
+704	553	44	Driver	72435	60	6
+551	557	4	Warehouse / Electronic Assembly	56989	7187	7
+552	557	4	Warehouse / Electronic Assembly	56989	7187	7
+267	558	47	Program Assistant	21819	10325	7
+268	558	47	Program Assistant	21819	10325	7
+200	560	25	Inventory Counter	15269	11504	4
+201	560	25	Inventory Counter	15269	11504	4
+199	560	25	Inventory Counter	15269	11504	0
+844	560	44	Immediate Opening	86807	18	7
+845	560	44	Immediate Opening	86807	18	7
+846	560	44	Immediate Opening	86807	18	7
+547	563	9	Customer Service Rep	55459	450	7
+545	563	9	Customer Service Rep	55459	450	6
+546	563	9	Customer Service Rep	55459	450	6
+548	563	46	Senior Customer Service Rep	55459	438	7
+549	563	46	Senior Customer Service Rep	55459	438	7
+550	563	46	Senior Customer Service Rep	55459	438	7
+530	566	21	Medical Receptionist	54425	11167	12
+531	566	21	Medical Receptionist	54425	11167	12
+532	566	21	Medical Receptionist	54425	11167	12
+285	572	11	Data Entry/Administrative Assistant	24959	11033	8
+286	572	11	Data Entry/Administrative Assistant	24959	11033	8
+287	572	11	Data Entry/Administrative Assistant	24959	11033	8
+288	572	11	Data Entry/Administrative Assistant	24959	11033	8
+289	572	11	Data Entry/Administrative Assistant	24959	11033	8
+290	572	11	Data Entry/Administrative Assistant	24959	11033	4
+291	572	11	Data Entry/Administrative Assistant	24959	11033	4
+292	572	11	Data Entry/Administrative Assistant	24959	11033	4
+293	572	11	Data Entry/Administrative Assistant	24959	11033	4
+294	572	11	Data Entry/Administrative Assistant	24959	11033	4
+32	575	18	ACCOUNTING SUPERVISOR	4061	2619	3
+33	575	18	ACCOUNTING SUPERVISOR	4061	2619	3
+34	575	18	ACCOUNTING SUPERVISOR	4061	2619	3
+27	575	18	ACCOUNTING SUPERVISOR	4061	2619	1
+28	575	18	ACCOUNTING SUPERVISOR	4061	2619	1
+29	575	18	ACCOUNTING SUPERVISOR	4061	2619	1
+30	575	18	ACCOUNTING SUPERVISOR	4061	2619	0
+31	575	18	ACCOUNTING SUPERVISOR	4061	2619	0
+119	578	39	Onsite Staffing Coordinator	9493	6310	8
+120	578	39	Onsite Staffing Coordinator	9493	6310	8
+121	578	39	Onsite Staffing Coordinator	9493	6310	8
+115	578	39	Onsite Staffing Coordinator	9493	6310	5
+116	578	39	Onsite Staffing Coordinator	9493	6310	5
+117	578	39	Onsite Staffing Coordinator	9493	6310	5
+118	578	39	Onsite Staffing Coordinator	9493	6310	5
+822	579	33	SALES - DIGITAL FITNESS ADVERTISING	83693	7519	9
+823	579	33	SALES - DIGITAL FITNESS ADVERTISING	83693	7519	9
+824	579	33	SALES - DIGITAL FITNESS ADVERTISING	83693	7519	9
+825	579	33	SALES - DIGITAL FITNESS ADVERTISING	83693	7519	9
+826	579	33	SALES - DIGITAL FITNESS ADVERTISING	83693	7519	9
+827	579	33	SALES - DIGITAL FITNESS ADVERTISING	83693	7519	9
+819	579	33	SALES - DIGITAL FITNESS ADVERTISING	83693	7519	2
+820	579	33	SALES - DIGITAL FITNESS ADVERTISING	83693	7519	2
+821	579	33	SALES - DIGITAL FITNESS ADVERTISING	83693	7519	2
+818	579	33	SALES - DIGITAL FITNESS ADVERTISING	83693	7519	1

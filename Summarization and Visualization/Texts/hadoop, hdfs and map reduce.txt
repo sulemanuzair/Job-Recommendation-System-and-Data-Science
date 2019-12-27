@@ -1,0 +1,27 @@
+HDFS - distributed file system
+hadoop - for processing data distributed
+map reduce - mappers reducers concept
+mainly java code, but can be done in any lanuguage
+
+
+design patterns
+filtering patterns - dont change data- 
+	simple filter
+	bloom filter
+	sampling
+	random sampling
+	top - n
+summarization patterns 
+	inverted index like index at back of book to find words 
+	numerical summarization  - word count - mean - median - standard deviation
+
+	combiners - pre calculations an mapper
+
+structural patterns
+	e.g rdbms data to hierarchical data
+	
+
+
+
+
+	

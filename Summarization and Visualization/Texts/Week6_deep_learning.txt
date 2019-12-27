@@ -1,0 +1,110 @@
+Deep learning intro and background (history and neuroscience)
+linear transformation
+eigen vectors and eigen values
+PCA principle component analysis
+
+point estimation
+
+bias
+variance
+maximum likelihood estimation
+bayesian statistics
+
+Curse of dimensionality
+manifold learning, e.g images, sounds and texts for explanation
+
+ReLU activation function, Rectified linear unit
+
+
+Maximum Likelihood
+Cross Entropy and Cross Entropy Cost Function
+Gaussian Distribution
+Functional
+Calculus of variations
+
+
+Saturating function,
+Bernoulli Distribution - yes/no question, p and  1 - p probability
+Probablity Distribution
+Exponentiation
+Normalization
+Softplus function
+Softmax (output) units
+
+
+ReLU for hidden layers - mostly
+Radial Basis function
+
+
+Regularization
+L2- Regularization
+
+
+
+Keras - TensorFlow - PyTorch
+
+Optimization - will read book part later
+Learning Algorithms
+Adaptive Learning Algorithms
+
+Convolutional Networks
+Recurrent Networkds
+
+
+Later to see, LSTM(and GRU) and auto-encoders
+Bayes error
+
+
+DS in Practical Application
+Precision
+Recall
+Coverage
+AI complete
+
+Keep link or data of practical methodology, very important
+
+model capacity
+drop out- weight decay decreases model capacity(and regularization too probably)
+
+soft max unit
+
+Still reading
+CV
+GCN global contrast normalization
+LCN local contrast normalization
+regularization in GCN and LCN
+dataset augmentation in dataset for CV tasks, for example , dataset ki images ko manipulate kr k aur dataset bnao, wah g waah for generalization,,, there are several techniques
+
+Recommendation System
+SVD 
+Bilinear Prediction
+
+RBM for recommendation systems particularly (may be) neural networks
+wohi purana, collaborative filtering, content based filtering b aa gia xD :( ;(
+difficulties in recommendation system
+re-inforcement learning, 
+exploration vs exploitation
+Knowledge representation
+
+
+Speech Recognition
+
+NLP
+n-grams model, n is number of tokens here
+NLM - neural language models
+Word Embeddings
+hierarchical softmax for quicker learning, during test and training, practically, not good outputs
+Importance sampling
+  - bag of words
+Noise Contrastive estimation
+combining neural language models and n-grams
+Neural machine translation
+Attention mechanism (Machine Translation)
+
+
+autoencoders
+
+
+
+		
+

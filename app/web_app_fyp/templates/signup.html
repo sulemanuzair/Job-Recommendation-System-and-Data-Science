@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    
+<head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Career Assistance</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+		<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='font-awesome/css/font-awesome.min.css') }}" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/form-elements.css') }}" />
+	
+		
+		
+		<!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" /> -->
+		   
+        <!-- <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"> -->
+        <!-- <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css"> -->
+		<!-- <link rel="stylesheet" href="assets/css/form-elements.css"> -->
+        <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+		
+		
+         <!-- Favicon and touch icons -->
+		  <link rel="shortcut icon" href="{{ url_for('static', filename='ico/favicon.png') }}">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ url_for('static', filename='ico/apple-touch-icon-144-precomposed.png') }}">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ url_for('static', filename='ico/apple-touch-icon-114-precomposed.png') }}">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ url_for('static', filename='ico/apple-touch-icon-72-precomposed.png') }}">
+        <link rel="apple-touch-icon-precomposed" href="{{ url_for('static', filename='ico/apple-touch-icon-57-precomposed.png') }}">
+
+
+
+        <!-- <link rel="shortcut icon" href="assets/ico/favicon.png"> -->
+        <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"> -->
+        <!-- <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"> -->
+        <!-- <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"> -->
+        <!-- <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"> -->
+
+<!-- Bootstrap CSS -->
+
+		<style>
+		
+		
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #888;
+    line-height: 30px;
+    text-align: center;
+}
+
+strong { font-weight: 500; }
+
+a, a:hover, a:focus {
+	color: #f35b3f;
+	text-decoration: none;
+    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}
+
+h1, h2 {
+	margin-top: 10px;
+	font-size: 38px;
+    font-weight: 100;
+    color: #555;
+    line-height: 50px;
+}
+
+h3 {
+	font-size: 22px;
+    font-weight: 300;
+    color: #555;
+    line-height: 30px;
+}
+
+h4 {
+	font-size: 18px;
+    font-weight: 300;
+    color: #00BCD4;
+    line-height: 26px;
+	font-weight: bold;
+}
+
+img { max-width: 100%; }
+
+::-moz-selection { background: #f35b3f; color: #fff; text-shadow: none; }
+::selection { background: #f35b3f; color: #fff; text-shadow: none; }
+
+
+/***** Top menu *****/
+
+.navbar {
+	padding-top: 10px;
+	background: #333;
+	background: rgba(51, 51, 51, 0.3);
+	border: 0;
+	-o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}
+.navbar.navbar-no-bg { background: none; }
+
+ul.navbar-nav {
+	font-size: 16px;
+	color: #fff;
+}
+
+.navbar-inverse ul.navbar-nav li { padding-top: 8px; padding-bottom: 8px; }
+
+.navbar-inverse ul.navbar-nav li .li-text { opacity: 0.8; }
+
+.navbar-inverse ul.navbar-nav li a { display: inline; padding: 0; color: #fff; }
+.navbar-inverse ul.navbar-nav li a:hover { color: #fff; opacity: 1; border-bottom: 1px dotted #fff; }
+.navbar-inverse ul.navbar-nav li a:focus { color: #fff; outline: 0; opacity: 1; border-bottom: 1px dotted #fff; }
+
+.navbar-inverse ul.navbar-nav li .li-social a {
+	margin: 0 5px;
+	font-size: 28px;
+	vertical-align: middle;
+}
+.navbar-inverse ul.navbar-nav li .li-social a:hover, 
+.navbar-inverse ul.navbar-nav li .li-social a:focus { border: 0; color: #f35b3f; }
+
+.navbar-brand {
+	width: 162px;
+	background: url(../img/logo.png) left center no-repeat;
+	text-indent: -99999px;
+}
+
+
+/***** Top content *****/
+
+.top-content { padding: 40px 0 170px 0; }
+
+.top-content .text { color: #fff; }
+.top-content .text h1 { color: #fff; }
+.top-content .description { margin: 20px 0 10px 0; }
+.top-content .description p { opacity: 0.8; }
+.top-content .description a { color: #fff; }
+.top-content .description a:hover, 
+.top-content .description a:focus { border-bottom: 1px dotted #fff; }
+
+.form-box { padding-top: 40px; }
+
+.f1 {
+	padding: 25px; background: #fff;
+	-moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+}
+.f1 h3 { margin-top: 0; margin-bottom: 5px; text-transform: uppercase; }
+
+.f1-steps { overflow: hidden; position: relative; margin-top: 20px; }
+
+.f1-progress { position: absolute; top: 24px; left: 0; width: 100%; height: 1px; background: #00BCD4; }
+.f1-progress-line { position: absolute; top: 0; left: 0; height: 1px; background: #00BCD4; }
+
+.f1-step { position: relative; float: left; width: 33.333333%; padding: 0 5px; }
+
+.f1-step-icon {
+	display: inline-block; width: 40px; height: 40px; margin-top: 4px; background: #ddd;
+	font-size: 16px; color: #fff; line-height: 40px;
+	-moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%;
+}
+.f1-step.activated .f1-step-icon {
+	background: #fff; border: 1px solid #f35b3f; color: #f35b3f; line-height: 38px;
+}
+.f1-step.active .f1-step-icon {
+	width: 48px; height: 48px; margin-top: 0; background: #f35b3f; font-size: 22px; line-height: 48px;
+}
+
+.f1-step p { color: #00BCD4; }
+.f1-step.activated p { color: #f35; }
+.f1-step.active p { color: #f35b3f; }
+.f1 fieldset {  text-align: left; }
+
+.f1-buttons { text-align: right; }
+
+.f1 .input-error { border-color: #f35b3f; }
+
+
+
+/***** Media queries *****/
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (max-width: 767px) {
+	
+	.navbar { padding-top: 0; }
+	.navbar.navbar-no-bg { background: #333; background: rgba(51, 51, 51, 0.9); }
+	.navbar-brand { height: 60px; margin-left: 15px; }
+	.navbar-collapse { border: 0; }
+	.navbar-toggle { margin-top: 12px; }
+	
+	.top-content { padding: 40px 0 110px 0; }
+
+}
+
+@media (max-width: 415px) {
+	
+	h1, h2 { font-size: 32px; }
+	
+	.f1 { padding-bottom: 20px; }
+	.f1-buttons button { margin-bottom: 5px; }
+
+}
+
+
+/* Retina-ize images/icons */
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+	
+	/* logo */
+    .navbar-brand {
+    	background-image: url(../img/logo%402x.png) !important; background-repeat: no-repeat !important; background-size: 162px 36px !important;
+    }
+	
+}
+
+
+			.box {
+			padding: 30px;
+			box-shadow: 0px 0px 14px rgba(191, 191, 191, 0.24);
+		}
+		button.btn.btn-next,button.btn.btn-submit, button.btn.btn-next:focus, button.btn.btn-next:active:focus, button.btn.btn-next.active:focus {
+    background:#00BCD4;
+}
+	.f1-step.active .f1-step-icon {
+   
+    background: #00BCD4;
+    
+}	
+
+.f1-step.activated p {
+    color:#9a9a9a ;
+}
+
+		.f1-step.activated .f1-step-icon {
+    background: #fff;
+    border: 1px solid #bbb;
+    color: #bbb;
+    line-height: 38px;
+}
+		.f1-step.active p {
+    color:#00BCD4;
+}
+.f1-step-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-top: 4p;
+    background: #00BCD4;
+    ddd: ;
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+		
+		</style>
+		
+    </head>
+
+    <body>
+
+
+
+
+		
+
+        <!-- Top content -->
+        <div class="top-content">
+            <div class="container">
+                
+                
+                
+                <div class="row">
+				
+                    <div class="col-sm-12  form-box">
+                    	<div class="box">
+						<form action = "http://localhost:8080/register" method = "post" class="f1">
+
+                    		<h3>Register on platform</h3>
+                    		<p>Fill the form to see recommended Jobs</p>
+                    		<div class="f1-steps">
+                    			<div class="f1-progress">
+                    			    <div class="f1-progress-line" data-now-value="16.66" data-number-of-steps="3" style="width: 16.66%;"></div>
+                    			</div>
+                    			<div class="f1-step active">
+                    				<div class="f1-step-icon"><i class="fa fa-user"></i></div>
+                    				<p>Basic Info</p>
+                    			</div>
+                    			<div class="f1-step">
+                    				<div class="f1-step-icon"><i class="fa fa-key"></i></div>
+                    				<p>Education</p>
+                    			</div>
+                    		    <div class="f1-step">
+                    				<div class="f1-step-icon"><i class="fa fa-twitter"></i></div>
+                    				<p>Work History</p>
+                    			</div>
+                    		</div>
+                    		
+                    		<fieldset>
+                    		    <h4>Tell us who you are:</h4>
+                    			<div class="form-group">
+                    			    <label class="sr-only" for="name">User Name</label>
+                                    <input type="text" name="name" placeholder="Complete Name" class="name form-control" required="true" id="name">
+                                </div>
+								
+								 <div class="form-group">
+                                    <label class="sr-only" for="email">Email</label>
+                                    <input type="email" name="email" placeholder="Email" class="email form-control" required="true" id="email">
+                                </div>
+								
+								<div class="form-group">
+                                    <label class="sr-only" for="password">Password</label>
+                                    <input type="password" name="password" placeholder="Password" class="password form-control" required="true" id="password">
+                                </div>
+                                <!-- <div class="form-group"> -->
+                                    <!-- <label class="sr-only" for="repeatPassword">Repeat password</label> -->
+                                    <!-- <input type="password" name="repeatPassword" placeholder="Repeat password"  -->
+                                                        <!-- class="repeatPassword form-control" required="true" id="repeatPassword"> -->
+                                <!-- </div> -->
+								
+								
+								 <div class="form-group">
+                                    <label class="sr-only" for="State">State/Province</label>
+                                    <input type="text" name="state" placeholder="State/province" class="State form-control" required="true" id="state">
+                                </div>
+								
+								
+                                <div class="form-group">
+                                    <label class="sr-only" for="city">City</label>
+                                    <input type="text" name="city" placeholder="City" class="city form-control" required="true" id="city">
+                                </div>
+								
+								
+                                <div class="form-group">
+                                    <label class="sr-only" for="country">Country</label>
+                                    <input type="text" name="country"  placeholder="Country" class="country form-control" required="true" id="country">
+                                </div>
+								
+                              
+                                <!-- <div class="f1-buttons"> -->
+                                    <!-- <button type="button" class="btn btn-next">Next</button> -->
+                                <!-- </div> -->
+                            </fieldset>
+
+                            <fieldset>
+                                <h4>Fill your Education Info:</h4>
+                               
+							   
+							   <div class="form-group">
+								<label for="exampleFormControlSelect1">Select Degree Type</label>
+								<select class="form-control" id="degreeType" name="degreeType">
+								  <option value="None">None</option>
+								  <option value="High School">High School</option>
+								  <option value="Vocational">Vocational</option>
+								  <option value="Associate's">Associate's</option>
+								  <option value="Bachelor's">Bachelor's</option>
+								  <option value="Masters's">Masters's</option>
+								  <option value="PhD">PhD</option>
+								  
+								</select>
+							  </div>
+  
+  
+                                 
+								
+								 <div class="form-group">
+                                    <label class="sr-only" for="major">Major</label>
+                                    <input type="text" name="major" placeholder="Major" class="major form-control" required="true" id="major">
+                                </div>
+								
+								 <div class="form-group">
+                                    <label class="" for="completionDate">Completion Date</label>
+                                    <input type="date" name="completionDate" placeholder="Completion Date" class="completionDate form-control" required="true" id="completionDate">
+                                </div>
+								
+                                <!-- <div class="f1-buttons"> -->
+                                    <!-- <button type="button" class="btn btn-previous">Previous</button> -->
+                                    <!-- <button type="button" class="btn btn-next">Next</button> -->
+                                <!-- </div> -->
+                            </fieldset>
+
+                            <fieldset>
+                                <h4>Fill previous Jobs Details:</h4>
+                                <div class="form-group">
+                                    <label class="sr-only" for="jobTitle">Job Title</label>
+                                    <input type="text" name="jobTitle" placeholder="Job Title" class="jobTitle form-control" required="true" id="jobTitle">
+                                </div>
+								
+								 <div class="form-group">
+                                    <label class="" for="startDate">Experience (In years)</label>
+                                    <input type="number" name="experience" placeholder="Start Date" min="0" class="startDate form-control" required="true" id="startDate">
+                                </div>
+								
+								 
+													
+													<div class="form-group">
+														<label class="form-label">Currently Employed</label>
+														
+															<div class="row">
+															<div class="col-md-6">
+													
+															  <input type="radio" name="currentlyEmployee" id="currentlyEmployee" value="1" required>  
+																<label >Yes</label>
+															
+															
+															</div>
+															
+															
+
+																<div class="col-md-6">
+														
+															  <input type="radio" name="currentlyEmployee" id="currentlyEmployee" value="0" required> 
+																<label >No</label>
+														
+															</div>
+															
+														</div>	
+													
+													</div>
+													<div class="form-group">
+														<label class="form-label">Managed Others</label>
+														
+															<div class="row">
+															<div class="col-md-6">
+													
+															  <input type="radio" name="managedOthers" id="managedOthers" value="1" required> 
+																<label >Yes</label>
+															
+															
+															</div>
+															
+															
+
+																<div class="col-md-6">
+														
+															  <input type="radio" name="managedOthers" id="managedOthers" value="0" required> 
+																<label >No</label>
+														
+															</div>
+															
+														</div>	
+													
+													</div>
+													
+								
+       
+                                <div class="form-group">
+                                    <label class="sr-only" for="f1-google-plus">Managed How Many</label>
+                                    <input id="managedHowMany" name="managedHowMany" type="number" id="replyNumber" min="0" data-bind="value:replyNumber" required="true"  placeholder="Managed How Many" class="f1-google-plus form-control" id="f1-google-plus">
+                                </div>
+                                <div class="f1-buttons">
+									<!-- <button type="submit" class="btn btn-submit">Add More</button> -->
+                                    <!-- <button type="button" class="btn btn-previous">Previous</button> -->
+                                    <button type="submit" class="btn btn-submit">Submit</button>
+                                </div>
+                            </fieldset>
+                    	
+                    	</form>
+                    </div>
+                </div>
+               </div>     
+            </div>
+        </div>
+
+
+        <!-- Javascript -->
+		<link href="{{ url_for('static', filename='js/jquery-1.11.1.min.js') }}" />
+		<link href="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}" />
+		<link href="{{ url_for('static', filename='js/jquery.backstretch.min.js') }}" />
+		<link href="{{ url_for('static', filename='js/retina-1.1.0.min.js') }}" />
+		<link href="{{ url_for('static', filename='js/scripts.js') }}" />
+	
+		
+		
+        <!-- <script src="assets/js/jquery-1.11.1.min.js"></script> -->
+        <!-- <script src="assets/bootstrap/js/bootstrap.min.js"></script> -->
+        <!-- <script src="assets/js/jquery.backstretch.min.js"></script> -->
+        <!-- <script src="assets/js/retina-1.1.0.min.js"></script> -->
+        <!-- <script src="assets/js/scripts.js"></script> -->
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+
+
+<!-- Mirrored from azmind.com/demo/bootzard-bootstrap-wizard-template/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 18 Sep 2018 15:51:59 GMT -->
+</html>
