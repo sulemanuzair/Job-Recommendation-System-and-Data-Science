@@ -1,18 +1,7 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Feb  3 16:20:16 2019
-
-@author: Suleman
-"""
-
 import pandas as pd
 from constants import *
 fraction_of_data = 0.25
 
-#1 #4 #7
-#1 122433
-#4 22705
-#7 13579
 filesInputNames = [
                    # '../apps/apps.tsv',
                    # '../splitjobs/splitjobs/jobs1.tsv',

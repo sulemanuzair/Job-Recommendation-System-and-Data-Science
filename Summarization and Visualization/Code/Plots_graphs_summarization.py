@@ -9,6 +9,7 @@ from matplotlib.font_manager import FontProperties
 #changing font of matplotlib
 from matplotlib import rcParams
 import numpy as np
+from sklearn.preprocessing import LabelEncoder
 
 rcParams['font.family'] = 'sans-serif'
 rcParams['font.sans-serif'] = ['Tahoma']
@@ -33,20 +34,24 @@ plt.title('How many employees have been managed by managers', fontsize=16)
 plt.show()
 
 # Old graph with longitude and latitude
-# users_with_cities_coordinates = users.loc[(users.CityLatitudeNew != 0) & (users.CityLongitudeNew != 0)]
-# from collections import Counter
-# # count the occurrences of each point
-# c = Counter(zip(users_with_cities_coordinates.CityLatitudeNew, users_with_cities_coordinates.CityLongitudeNew))
-# # create a list of the sizes, here multiplied by 10 for scale
-# s = [c[(xx,yy)] for xx,yy in zip(users_with_cities_coordinates.CityLatitudeNew, users_with_cities_coordinates.CityLongitudeNew)]
-#
-# # plot it
-# plt.scatter(users_with_cities_coordinates.CityLongitudeNew, users_with_cities_coordinates.CityLatitudeNew, s=s)
-# plt.show()
-#
-# print ('unique cities', users.City.unique().size)
-# print ('cities with known latitude and longitude', pd.unique(users.City.loc[(users.CityLongitudeNew != 0) & (users.CityLatitudeNew != 0)]).size)
-# print ('cities with not latitude and longitude in new file, but in prev file', pd.unique(users.City.loc[(users.CityLongitudeNew == 0) & (users.CityLatitudeNew == 0) & (users.CityLatitude != 0) & (users.CityLatitude != 0)]).size)
+users_with_cities_coordinates = users.loc[(users.CityLatitude != 0) & (users.CityLongitude != 0)]
+from collections import Counter
+# count the occurrences of each point
+c = Counter(zip(users_with_cities_coordinates.CityLatitude, users_with_cities_coordinates.CityLongitude))
+# create a list of the sizes, here multiplied by 10 for scale
+s = [c[(xx, yy)] for xx, yy in zip(users_with_cities_coordinates.CityLatitude, users_with_cities_coordinates.CityLongitude)]
+
+le = LabelEncoder()
+le.fit(users_with_cities_coordinates.State.values.tolist())
+numericalLabels = le.transform(users_with_cities_coordinates.State.values.tolist())
+
+# plot it
+plt.scatter(users_with_cities_coordinates.CityLongitude, users_with_cities_coordinates.CityLatitude, s=s, c=numericalLabels, cmap='tab20', zorder=100)
+plt.show()
+
+print ('unique cities', users.City.unique().size)
+print ('cities with known latitude and longitude', pd.unique(users.City.loc[(users.CityLongitude != 0) & (users.CityLatitude != 0)]).size)
+print ('cities with not latitude and longitude in new file, but in prev file', pd.unique(users.City.loc[(users.CityLongitude == 0) & (users.CityLatitude == 0) & (users.CityLatitude != 0) & (users.CityLatitude != 0)]).size)
 
 print('Unique Countries: ', users.Country.unique())
 # Graph for users' countries
@@ -76,20 +81,22 @@ plt.show()
 print("total states: ", users.loc[(users.Country == 'US')].State.unique().size)
 print("states: ", users.loc[(users.Country == 'US')].State.unique())
 
-# # count the occurrences of each point
-# # checking for != 0 latitude as some entries has some issues, and/or do not exist in our states csv file
-# users_us = users.loc[(users.Country == 'US') & (users.StateLatitude != 0)]
-# print (users_us)
-# c_states = Counter(zip(users_us.StateLatitude, users_us.StateLongitude))
-# # create a list of the sizes, here multiplied by 10 for scale
-# s_states = [c_states[(xx,yy)] for xx,yy in zip(users_us.StateLatitude, users_us.StateLongitude)]
-#
-# # plot it
-# plt.scatter(users_us.StateLongitude, users_us.StateLatitude, s=s_states)
-# plt.show()
+# count the occurrences of each point
+# checking for != 0 latitude as some entries has some issues, and/or do not exist in our states csv file
+users_us = users.loc[(users.Country == 'US') & (users.StateLatitude != 0)]
+print(users_us)
+c_states = Counter(zip(users_us.StateLatitude, users_us.StateLongitude))
+# create a list of the sizes, here multiplied by 10 for scale
+s_states = [c_states[(xx,yy)] for xx,yy in zip(users_us.StateLatitude, users_us.StateLongitude)]
+
+# plot it
+plt.scatter(users_us.StateLongitude, users_us.StateLatitude, s=s_states, c=s_states, cmap='tab20')
+plt.show()
+
 print((users.loc[(users.Country == 'US')]).groupby('State').UserID.count())
-# plt.scatter(users.CityLongitude, users.CityLatitude, marker='o', color='r', zorder=5, s=250)
-# plt.show()
+
+#plt.scatter(users.CityLongitude, users.CityLatitude, marker='o', color='r', zorder=5, s=250)
+#plt.show()
 
 # Boxplots
 users.WorkHistoryCount.to_frame().boxplot()

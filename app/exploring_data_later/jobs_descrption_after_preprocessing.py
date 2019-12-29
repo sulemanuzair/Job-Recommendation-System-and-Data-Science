@@ -31,5 +31,4 @@ for column in JOBS_COLUMNS_TEXT:
                 outfile.write("\n")
             except:
                 errors_in_writing_file = errors_in_writing_file + 1
-
     print(column + " : Errors in file writing : ", errors_in_writing_file)

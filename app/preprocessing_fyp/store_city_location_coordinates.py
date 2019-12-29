@@ -4,7 +4,7 @@ Created on Thu May 30 00:35:24 2019
 
 @author: Haziq Farooq
 """
-
+from constants import *
 import pandas as pd
 from sklearn import preprocessing
 from collections import defaultdict
@@ -47,7 +47,7 @@ with open("uscitiesv1.5.csv", encoding="utf8") as csvfile:
        t=t+1
        
 
-with open('../users/users_part.tsv' , encoding="utf8") as csvfile1:
+with open(dataset_path + '/users/users_part.tsv' , encoding="utf8") as csvfile1:
     readCSV = csv.reader(csvfile1, delimiter='\t')
     for row in readCSV:
          if(q>0):
@@ -62,20 +62,21 @@ for i in arr:
         longitude.append(yi[i][0])
         latitude.append(yi[i][1])
      else:  
-        longitude.append(0.0)
-        latitude.append(0.0)
+        longitude.append(None)
+        latitude.append(None)
 
 
 df=pd.DataFrame({"CityLongitudeNew":longitude,
                 "CityLatitudeNew":latitude}) 
     
     
-data =pd.read_csv('../users/users_part.tsv' , sep='\t')
+data =pd.read_csv(dataset_path + '/users/users_part.tsv' , sep='\t')
+data['CityLongitude'] = df.CityLongitudeNew
+data['CityLatitude'] = df.CityLatitudeNew
+#rt = data.join(df)
+rt = data
 
-rt = data.join(df)
-
-
-rt.to_csv('../users/users_part.tsv', sep='\t', index = False)    
+rt.to_csv(dataset_path + '/users/users_part.tsv', sep='\t', index=False)
     
 '''from geopy.geocoders import Nominatim
 geolocator = Nominatim(user_agent="myAPP")

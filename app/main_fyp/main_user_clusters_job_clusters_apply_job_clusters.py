@@ -272,15 +272,13 @@ for i in range(len(filesInputNames)):
         data1 = data.groupby(['ClusterUser','ClusterJob']).size()
         
         data1 = data1.reset_index()
-        data1.rename(columns = {0: 'frequency'}, inplace = True)
-        
-        
+        data1.rename(columns={0: 'frequency'}, inplace=True)
+
         data['frequency'] = 0
         for i in range(len(data1)):
             for j in range(len(data)):
                 if data1['ClusterUser'].get(i) == data['ClusterUser'].get(j) and data1['ClusterJob'].get(i) == data['ClusterJob'].get(j):
                     data.set_value(j, 'frequency' , data1['frequency'].get(i))
-        
 
         data['Similarity'] = np.random.uniform(0, 1, data.shape[0])
         data = data.sort_values(['ClusterUser', 'ClusterJob', 'Similarity'], ascending=[True, True, False])
@@ -333,17 +331,16 @@ for i in range(len(filesInputNames)):
         uc_jc_pairs['Similar'] = 0
         le = LabelEncoder()
         data_s = data_s[data_s['JobTitle'].notnull()]
-        
-        
+
         for i in range(len(uc_jc_pairs)):
             index_1 = i
             findNextIndices()
             
             difference = 0
             for k in range(index_2_s, index_2_e):
-                difference = difference + (1 - similarity_sentences( uc_jc_pairs.iloc[i].Title , data_s.iloc[k].JobTitle))
+                difference = difference + (1 - similarity_sentences(uc_jc_pairs.iloc[i].Title, data_s.iloc[k].JobTitle))
             uc_jc_pairs.set_value(i, 'Similar' , difference)
                  
         uc_jc_pairs = uc_jc_pairs.sort_values(['ClusterUser', 'ClusterJob', 'Similar'],  ascending=[True, True, False])
-        uc_jc_pairs.to_csv('ClusterWiseJobs.tsv', sep ='\t')
-        
+        uc_jc_pairs.to_csv('ClusterWiseJobs.tsv', sep='\t')
+

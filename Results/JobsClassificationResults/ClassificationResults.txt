@@ -1,0 +1,17 @@
+Using 2500 out of 9000+ rows
+DecisionTreeClassifier Training Accuracy :  0.9995
+DecisionTreeClassifier Test Accuracy :  0.682
+SVC Training Accuracy :  0.9535
+SVC Test Accuracy :  0.73
+LinearSVC Training Accuracy :  0.985
+LinearSVC Test Accuracy :  0.81
+C:\Python\Python37-32\FYP2\lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:571: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+MLPClassifier Training Accuracy :  0.993
+MLPClassifier Test Accuracy :  0.772
+C:\Python\Python37-32\FYP2\lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:571: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+MLPClassifier Training Accuracy :  0.999
+MLPClassifier Test Accuracy :  0.794
+RandomForestClassifier Training Accuracy :  0.9995
+RandomForestClassifier Test Accuracy :  0.726
