@@ -150,6 +150,17 @@
       </div>             
     </header>
     <!-- Header Section End --> 
+    <section>
+      <center>
+        <h4> Top Jobs</h4>
+        Will add jobs here(Added) <br>
+        {% if 1==1 %}
+            {{jobs[0][2]}} <br>
+            {{jobs[1][2]}} <br>
+            {{jobs[2][2]}} <br>
+        {% endif %}
+      </center>
+    </section>
 
     <!-- Category Section Start -->
     <section class="category section bg-gray">
@@ -264,7 +275,7 @@
 				  <span> Posted:{{ Title[10] }} </span> 
 				  <span> End:{{ Title[11] }}</span> 
                 </div>
-               <a href="http://localhost:8080/jobDetails?id={{ Title[1] }}"> <span class="full-time">View Details</span></a>
+               <a href="http://localhost:8100/jobDetails?id={{ Title[1] }}"> <span class="full-time">View Details</span></a>
               </div>
             </div>
           </div>

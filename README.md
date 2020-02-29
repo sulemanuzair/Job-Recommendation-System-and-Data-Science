@@ -22,4 +22,8 @@ Understanding MapReduce, Hadoop and Spark for very large datasets.
 # DataStory Telling
 Understanding story telling, data story telling and its importance.
 
+#Other Information
 DataSet: The dataset used here is available at kaggle Job Recommendation Challenge' at: https://www.kaggle.com/c/job-recommendation/data
+
+Dataset division
+Adding location attributes

@@ -1,0 +1,228 @@
+Recommendation system:
+Non personalized, content based
+
+
+(Users's) Preference Model:
+Explicit actions
+Implicit actions
+
+likes(thumbs up) vs rating
+
+when the users's preference is collected:
+- consumption
+- memory
+- expectation
+
+Implicit examples:
+image
+links purchase
+clicks 
+videos
+etc
+
+
+Implicit data benefits from larger volumes
+
+Predictions and Recommendations
+explicit vs organic recommendations
+some examples of recommendations and predictions, 
+top n, recommeneded, etc
+
+balance between explicit and organic recommendations
+
+analytical framework for recommendation system:
+dimensions of analysis:
+
+Domain : what are you recommending
+Purpose of recommendation:
+Context: what is the user doing, etc ?
+Personalization level:
+Privacy and Trustworthiness:
+Interfaces: Explicit and implicit
+Recommendation Algorithms
+
+
+Basic Model
+user
+items
+ratings
+(community)
+
+Non personalized recommenders
+
+Content Based Filtering
+	it has a user model
+	attributes for items and (ratings calculate for that attributes)\
+
+Collaborative Filtering
+	User -User
+	item -Item
+
+tour of amazon.com
+
+exploit vs explore
+
+
+
+
+############################
+Non personalized 
+e.g case, for new users
+
+Weakly Personalized
+
+avg and stats, distribution
+geography, age, context popular sauce for a specific food)
+
+each users' rating issues, conflicts between users in preferences
+
+
+Ranking Considerations: 
+	confidence
+	risk tolerance
+	domain and business considerations
+
+
+damping and time decaying posts etc
+
+
+
+demographics in recommendation:
+break down summary statistics by demographics
+
+mixing different demographics
+multiple regression model
+linear regression and logistic regression (e.g: rating vs buy, not buy)
+
+Demographics and related approaches
+
+
+"One more thought … if you’re thinking about educational recommenders, different types of demographics might be useful. If you have information on learning styles, for instance (sometimes considered psychographics), it might help narrow down which course among alternatives is most likely to be successful in helping a student learn."
+Quote taken from Coursera Recommender System Course
+
+
+Product Association Recommendation
+Association Rule Mining- Not part of this course majorly
+
+Businesses filter what they need to recommend e.g product association car and gloves vs cloth and living room set
+
+Use context to provide more relevant recommendations: ice cream with ketchup
+transaction history, with time, people buy new things, similar people might buy similar products later
+
+recommendation : whdreplacement vs add-on(s)
+
+
+
+ASSIGNMENT : 
+
+
+
+mean and damped mean
+
+
+
+Content Based Recommenders:
+Content based preferences, attributes
+Key Idea: Model items according to relevant attributes
+	  Model or reveal user preferences by attributes
+
+	keywords, tags, 
+	harder to find complements than substitute
+
+	phases and n-grams e.g
+		computer science
+			 and
+		computer, science separate separate, far from each other
+
+	significance: job title, job description
+	general quality or authority
+	implied tags or content
+	
+	stemming: different ending but same root
+	stopping: stop words, useless words
+	vector space model
+ 	
+features, tags, words
+
+	item attributes using features, tags, words
+	user profile using features, attributes,
+	
+Interview of knowledge based recommendation systems
+
+Interview case based reasoning: use past experience to solve new problems, example of reviews of app macbook review
+Interview critique based recommendation: 
+Interview search and recommendation, and context
+Interview, including semantics, word embeddings, etc
+
+search and recommendation
+
+score function, order function for recommendation
+
+ASSIGNMENT 1 IMPORTANT THINGS:  => Summary Stats, Product Association, Demographic Analysis
+
+ 
+ 
+ User - User similarity
+    conditionss : limit users to find similarity with due to:
+		limit size to similar users
+		minimum simarility baseline
+		not find similarity with the user itself(obvious)
+		dealing with negative simarility
+		Computation issues
+		
+		
+		
+		How to set neighbours for a user,
+			all users,
+			based on similairty,
+			random,
+			top n closest with similarity,
+			clusters,
+				with the case that users with less similairty can cause noise
+				
+				starting line : top n 30 neighbours, wighthed aerageing, user-mean or z-score normailization,  cosine similairy over normalized ratings
+				
+				Computing similairties wtith pearson correlation(check)
+				Interview Influence Limiting and Attack Resistance
+				
+2 lectures notes on paper
+
+item - item Unary data
+cosine and /vs conditional probability				
+			
+extensions and hybrids in item-item
+	trust aware collaborative filtering
+	page-rank for important item
+	similarity measures in item-item collaborative filtering can be changed to any similarity measure, even content similarity
+
+
+
+
+
+Cold start problem: new user:
+	show popular items, demographcally relevant, etc
+New item cold start problem: content based type, or show it to some(depends) to get feedbacks on it
+
+
+
+interview - recommending for groups:
+doodle application for group meeting
+
+Threat models in recommendations:
+make recommendations accurate and resilient if malicious users try to manipulate recommendations
+
+
+
+
+
+One whole video on --> giving users info about recommendation, the simpler, the better,
+(graphs, explanation, etc)
+
+giving/explaning the users about the recommendation:
+	more data on the prediction itself,
+	other data about the item,
+	simplifiedn presentations of relevant data,
+	past performance data,
+	supporting statistics,\
+
+
