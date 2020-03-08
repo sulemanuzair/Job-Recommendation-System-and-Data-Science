@@ -1,0 +1,37 @@
+django-admin startproject project_name
+
+python manage.py runserver (optional 8080)
+python manage.py migrate
+
+python manage.py startapp app_name(e.g: schools)
+
+python manage.py makemigrations schools
+
+like rails c (rails console), there is =>
+python manage.py shell
+
+Some commands of shell
+	c =  Course.objects.get(pk=1)
+	c.student_set.create(name='ali')
+	c.student_set.all()
+
+	exit() to close
+
+
+creating superuser(for admin panel):
+python manage.py createsuperuser
+
+added admin panel models in admin.py
+and other minor changes
+
+
+managed views,
+added based application.html file
+check how to add default application.html to every file
+
+{%  %} for just python code with no output to display on browser -- like <% %>
+{{}} for outputting, like <%= %> in rails
+
+
+
+read documentation django 
