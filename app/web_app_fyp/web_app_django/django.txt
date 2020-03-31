@@ -1,6 +1,12 @@
+====== again starting project
+start cmd.exe
+pipenv shell
+=======
+
+
 django-admin startproject project_name
 
-python manage.py runserver (optional 8080)
+python manage.py runserver 8081 (optional 8080)
 python manage.py migrate
 
 python manage.py startapp app_name(e.g: schools)
@@ -9,6 +15,8 @@ python manage.py makemigrations schools
 
 like rails c (rails console), there is =>
 python manage.py shell
+
+
 
 Some commands of shell
 	c =  Course.objects.get(pk=1)
