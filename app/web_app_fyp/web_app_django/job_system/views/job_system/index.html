@@ -1,32 +1,29 @@
 {% extends 'application.html' %}
 
 {% block content %}
-	{% if authenticated %}
-		<div class='container'>
-			<div class='row'>
-				<div class='col-md-6  m-auto text-center'>
-					<h1 class='text-center mb-3'>
-						Jobs
-					</h1>
-					{% if jobs %}
-						{% for job in jobs %}
-							<div class='card mb-3'>
-								<div class='card-body'>
-									<p class='lead'>
-										{{ job.title_original }}
-									</p>
-								</div>
+	<div class='container'>
+		<div class='row'>
+			<div class='col-md-6  m-auto text-center'>
+				<h1 class='text-center mb-3'>
+					Jobs
+				</h1>
+				{% if jobs %}
+					{% for job in jobs %}
+						<div class='card mb-3'>
+							<div class='card-body'>
+								<p class='lead'>
+									{{ job.title_original }}
+								</p>
 							</div>
-						{% endfor %}
-					{% else %}
-						<p>
-							No jobs available
-						</p>
-					{% endif %}
-				</div>
+						</div>
+					{% endfor %}
+					{% include '_paginate.html' with objects=jobs pages_range=yes %}
+				{% else %}
+					<p>
+						No jobs available
+					</p>
+				{% endif %}
 			</div>
 		</div>
-	{% else %}
-		Not signed in? Sign in first
-	{% endif %}
+	</div>
 {% endblock %}

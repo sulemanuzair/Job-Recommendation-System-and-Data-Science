@@ -1,3 +1,17 @@
+.paginate {
+	text-align: center;
+	margin-top: 1em;
+}
+
+.paginate-current-number {
+
+}
+
+.paginate-number{
+	border-radius: 2px;
+	padding: 0.4em;
+}
+
 .footer {
   position: fixed;
   left: 0;
