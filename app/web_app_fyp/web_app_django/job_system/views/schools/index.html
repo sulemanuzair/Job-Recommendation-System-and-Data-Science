@@ -1,0 +1,31 @@
+{% extends 'application.html' %}
+
+{% block content %}
+	<div class='container'>
+		<div class='row'>
+			<div class='col-md-6  m-auto text-center'>
+				<h1 class='text-center mb-3'>
+					Courses
+				</h1>
+				{% if courses %}
+					{% for course in courses %}
+						<div class='card mb-3'>
+							<div class='card-body'>
+								<p class='lead'>
+									{{ course.name }}
+								</p>
+								<a href="{% url 'schools:course' course.id %}" class='btn btn-primary btn-sm'>
+									Details
+								</a>
+							</div>
+						</div>
+					{% endfor %}
+				{% else %}
+					<p>
+						No courses available
+					</p>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+{% endblock %}
