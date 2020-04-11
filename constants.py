@@ -6,6 +6,9 @@ results_path = root_path + '/Results'
 #for Debugging
 #import  pdb; pdb.set_trace()
 
+#for debugging 2, needs testing
+#import code; code.interact(local=dict(globals(), **locals()))
+
 # DataBase Columns VarChar Information
 # Small Fields : 20
 # general fields: 100

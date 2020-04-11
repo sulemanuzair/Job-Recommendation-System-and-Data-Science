@@ -2,7 +2,7 @@
 from constants import *
 import pandas as pd
 
-job_applications_file = dataset_path + '/apps/apps_part.tsv'
+job_applications_file = dataset_path + '/apps/apps.tsv'
 #jobs_file = dataset_path + '/splitjobs/splitjobs/jobs1.tsv'
 apps = pd.read_csv(job_applications_file, sep='\t')
 #jobs = pd.read_csv(jobs_file, sep='\t')

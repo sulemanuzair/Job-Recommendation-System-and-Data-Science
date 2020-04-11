@@ -6,7 +6,7 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 le = LabelEncoder()
 
-job_applications_file = dataset_path + '/apps/apps_part.tsv'
+job_applications_file = dataset_path + '/apps/apps.tsv'
 jobs_file = dataset_path + '/splitjobs/splitjobs/jobs2_partS.tsv'
 apps = pd.read_csv(job_applications_file, sep='\t')
 jobs = pd.read_csv(jobs_file, sep='\t')
