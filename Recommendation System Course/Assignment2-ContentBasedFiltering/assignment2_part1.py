@@ -12,7 +12,7 @@ cursor = db.cursor()
 total_job_applications_being_used = 10000
 
 try:
-    job_applications_sql         = 'select * from job_applications limit %d;' % total_job_applications_being_used
+    job_applications_sql = 'select * from job_applications limit %d;' % total_job_applications_being_used
     cursor.execute(job_applications_sql)
     job_applications = cursor.fetchall()
 
@@ -27,7 +27,7 @@ try:
     job_applications_df = pd.DataFrame(job_applications, columns=new_cols)
 
     user_ids_sql = ', '.join(str(id) for id in job_applications_df.user_id)
-    users_sql = 'select * from users where user_id in (%s)' % user_ids_sql
+    users_sql = 'select * from users where id in (%s)' % user_ids_sql
     cursor.execute(users_sql)
     users = cursor.fetchall()
     
@@ -42,7 +42,7 @@ try:
     users_df = pd.DataFrame(users, columns=new_cols[0:-3]) # 3 extra column name also present in query output
     
     job_ids_sql = ', '.join(str(id) for id in job_applications_df.job_id)
-    jobs_sql = 'select * from jobs where job_id in (%s)' % job_ids_sql
+    jobs_sql = 'select * from jobs where id in (%s)' % job_ids_sql
     cursor.execute(jobs_sql)
     jobs = cursor.fetchall()
 
@@ -58,6 +58,6 @@ try:
     
     print(users_df, jobs_df, job_applications_df)
 except:
-    print('Error: Exception catched manually.')
+    print('Error: Exception caught manually.')
 db.close()
 
