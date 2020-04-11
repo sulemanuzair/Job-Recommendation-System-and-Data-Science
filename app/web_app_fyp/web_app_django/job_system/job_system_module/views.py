@@ -12,7 +12,7 @@ from .filters import JobsFilter
 
 @login_required(login_url='login')
 def index(request):
-	jobs = Job.objects.filter(id__lt=10000) #[0:200]
+	jobs = Job.objects.filter(id__lt=10000)
 	jobs_filter = JobsFilter(request.GET, queryset=jobs)
 	jobs = jobs_filter.qs.prefetch_related()
 
@@ -30,5 +30,7 @@ def index(request):
 	upper_page_limit = min(total_pages, curr_page + page_range)
 	pages_range = range(lower_page_limit, upper_page_limit)
 
-	context = { 'jobs': jobs, 'pages_range': pages_range, 'jobs_filter': jobs_filter }
+
+	top_jobs = Job.objects.filter(id__gt=9990, id__lt=10000)
+	context = { 'jobs': jobs, 'pages_range': pages_range, 'jobs_filter': jobs_filter, 'top_jobs': top_jobs }
 	return render(request, 'job_system/index.html', context)

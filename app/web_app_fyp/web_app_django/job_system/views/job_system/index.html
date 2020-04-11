@@ -1,36 +1,68 @@
 {% extends 'application.html' %}
 
 {% block content %}
-	{% include 'job_system/_jobs_search_form.html' %}
-  <div class='container'>
-		<div class='row'>
-			<div class='col-md-6  m-auto text-center'>
-				<h1 class='text-center mb-3'>
-					Jobs
-				</h1>
-				{% if jobs %}
-					{% for job in jobs %}
-						<div class='card mb-3'>
-							<div class='card-body'>
-								<p class='lead'>
-									{{ job.title_original }}
-									{% for app in job.job_application_set.all %}
-										{{ app.job_id }}
-									{% endfor %}
-								</p>
-								<p>
-									{{ job.city }}
-								</p>
+    {% include 'job_system/_jobs_search_form.html' %}
+	<div class="container-fluid">
+		<div class="row">
+		<div class='col-sm-3'></div>
+		<div class='col-sm-6'>
+			<div class='row'>
+				<div class='col-md-12 m-auto text-center'>
+					<h1 class='text-center mb-3'>
+						Jobs
+					</h1>
+					{% if jobs %}
+						{% for job in jobs %}
+							<div class='card mb-3'>
+								<div class='card-body'>
+									<p class='lead'>
+										{{ job.title_original }}
+										{% for app in job.job_application_set.all %}
+											{{ app.job_id }}
+										{% endfor %}
+									</p>
+									<p>
+										{{ job.city }}
+									</p>
+								</div>
 							</div>
-						</div>
-					{% endfor %}
-					{% include '_paginate.html' with objects=jobs pages_range=pages_range %}
-				{% else %}
-					<p>
-						No jobs available
-					</p>
-				{% endif %}
+						{% endfor %}
+						{% include '_paginate.html' with objects=jobs pages_range=pages_range %}
+					{% else %}
+						<p>
+							No jobs available
+						</p>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-3'>
+			<div class='row'>
+				<div class='col-md-12 m-auto text-center'>
+					<h1 class='text-center mb-3'>
+						Top Jobs
+					</h1>
+					{% if top_jobs %}
+						{% for job in top_jobs %}
+							<div class='card mb-3'>
+								<div class='card-body'>
+									<p class='lead'>
+										{{ job.title_original }}
+									</p>
+									<p>
+										{{ job.city }}
+									</p>
+								</div>
+							</div>
+						{% endfor %}
+					{% else %}
+						<p>
+							Recommendations not available
+						</p>
+					{% endif %}
+				</div>
 			</div>
 		</div>
 	</div>
+</div>
 {% endblock %}
