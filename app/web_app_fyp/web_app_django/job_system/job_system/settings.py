@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'authentication',
     'job_system_module.apps.JobSystemModuleConfig',
     'schools.apps.SchoolsConfig',
+    'django_filters',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -1,6 +1,61 @@
 {% extends 'application.html' %}
 
 {% block content %}
+	<!-- Header Section Start -->
+    <header id="home" class="hero-area"> 
+      <div class="container">      
+        <div class="row space-100 justify-content-center">
+          <div class="col-lg-10 col-md-12 col-xs-12">
+            <div class="contents">
+              <h2 class="head-title text-primary">Filter jobs as per your requirements</h2>
+              <div class="job-search-form border">
+                <form method='GET'>
+                  <div class="row">
+                    <div class="col-lg-5 col-md-6 col-xs-12">
+                      <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Job Title or Company Name" name='title' id='id_title'>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                      <div class="form-group">
+                        <div class="search-category-container">
+                          <input class="form-control" type="text" placeholder="City" name='city' id='id_city'>
+                        </div>
+                        <i class="lni-map-marker"></i>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                      <div class="form-group">
+                        <div class="search-category-container">
+                          <label class="styled-select">
+                            <select>
+                              <option>All Categories</option>
+                              <option>Finance</option>
+                              <option>IT & Engineering</option>
+                              <option>Education/Training</option>
+                              <option>Art/Design</option>
+                              <option>Sale/Markting</option>
+                              <option>Healthcare</option>
+                              <option>Science</option>                              
+                              <option>Food Services</option>
+                            </select>
+                          </label>
+                        </div>
+                        <i class="lni-layers"></i>
+                      </div>
+                    </div>
+                    <div class="col-lg-1 col-md-6 col-xs-12">
+                      <button type="submit" class="button bg-primary"><i class="fa fa-search"></i></button>
+
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>             
+    </header>
 	<div class='container'>
 		<div class='row'>
 			<div class='col-md-6  m-auto text-center'>
@@ -13,11 +68,17 @@
 							<div class='card-body'>
 								<p class='lead'>
 									{{ job.title_original }}
+									{% for app in job.job_application_set.all %}
+										{{ app.job_id }}
+									{% endfor %}
+								</p>
+								<p>
+									{{ job.city }}
 								</p>
 							</div>
 						</div>
 					{% endfor %}
-					{% include '_paginate.html' with objects=jobs pages_range=yes %}
+					{% include '_paginate.html' with objects=jobs pages_range=pages_range %}
 				{% else %}
 					<p>
 						No jobs available
