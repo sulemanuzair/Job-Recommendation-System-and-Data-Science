@@ -2,7 +2,7 @@ from constants import *
 import pandas as pd
 import pandasql as ps
 
-job_applications_file = dataset_path + '/apps/apps_part.tsv'
+job_applications_file = dataset_path + '/apps/apps.tsv'
 apps = pd.read_csv(job_applications_file, sep='\t')
 
 print('Total jobs in this sample : ', apps.shape[0])
@@ -23,7 +23,7 @@ db = pymysql.connect(domain, username, password, db_name)
 cursor = db.cursor()
 sql_fetch_jobs = "SELECT * " \
                  "FROM %s " \
-                 "WHERE job_id = '%d' or job_id = '%d' or job_id = '%d';" % (table_name, top_3_most_applied_jobs.item(0), top_3_most_applied_jobs.item(1), top_3_most_applied_jobs.item(2))
+                 "WHERE id = '%d' or id = '%d' or id = '%d';" % (table_name, top_3_most_applied_jobs.item(0), top_3_most_applied_jobs.item(1), top_3_most_applied_jobs.item(2))
 print(sql_fetch_jobs)
 try:
     cursor.execute(sql_fetch_jobs)

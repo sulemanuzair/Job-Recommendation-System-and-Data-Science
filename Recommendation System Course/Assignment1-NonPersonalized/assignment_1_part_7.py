@@ -46,9 +46,9 @@ cursor = db.cursor()
 
 try:
     sql = 'select count(*) from job_applications ' \
-          'join jobs on jobs.job_id < 5000 and job_applications.job_id < 5000 and job_applications.job_id = jobs.job_id ' \
-          'join users on users.user_id = job_applications.user_id ' \
-          'where jobs.job_id < 5000 and job_applications.job_id < 5000 and end_date IS NOT NULL and application_date > end_date and currently_employed = false;'
+          'join jobs on jobs.id < 5000 and job_applications.job_id < 5000 and job_applications.job_id = jobs.id ' \
+          'join users on users.id = job_applications.user_id ' \
+          'where jobs.id < 5000 and job_applications.job_id < 5000 and end_date IS NOT NULL and application_date > end_date and currently_employed = false;'
 
     cursor.execute(sql)
     jobs = cursor.fetchall()
@@ -56,9 +56,9 @@ try:
         print('Number of time unemployed people applied on ended job: ', row)
 
     sql = 'select count(*) from job_applications ' \
-          'join jobs on jobs.job_id < 5000 and job_applications.job_id < 5000 and job_applications.job_id = jobs.job_id ' \
-          'join users on users.user_id = job_applications.user_id ' \
-          'where jobs.job_id < 5000 and job_applications.job_id < 5000 and end_date IS NOT NULL and application_date > end_date and currently_employed = true;'
+          'join jobs on jobs.id < 5000 and job_applications.job_id < 5000 and job_applications.job_id = jobs.id ' \
+          'join users on users.id = job_applications.user_id ' \
+          'where jobs.id < 5000 and job_applications.job_id < 5000 and end_date IS NOT NULL and application_date > end_date and currently_employed = true;'
 
     cursor.execute(sql)
     jobs = cursor.fetchall()

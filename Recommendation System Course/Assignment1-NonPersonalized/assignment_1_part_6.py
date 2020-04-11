@@ -49,8 +49,8 @@ cursor = db.cursor()
 #                "WHERE job_id = %d or job_id = %d or job_id = %d;" % (table_name, 130364, 65413, 98665)
 #print(sql_fetch_jobs)
 try:
-    sql_users_already_employed = 'select count(user_id) from users where currently_employed = TRUE;'
-    sql_users_not_employed = 'select count(user_id) from users where currently_employed = false;'
+    sql_users_already_employed = 'select count(id) from users where currently_employed = TRUE;'
+    sql_users_not_employed = 'select count(id) from users where currently_employed = false;'
     cursor.execute(sql_users_already_employed)
     jobs = cursor.fetchall()
     for row in jobs:
@@ -63,7 +63,7 @@ try:
         print(row)
         users_count_not_employed = row[0]
     sql_job_application_count_for_employed_users = 'select count(*) from job_applications ' \
-                                                   'join users on job_applications.user_id = users.user_id ' \
+                                                   'join users on job_applications.user_id = users.id ' \
                                                    'where currently_employed = true;'
     print(sql_job_application_count_for_employed_users)
     cursor.execute(sql_job_application_count_for_employed_users)
@@ -73,7 +73,7 @@ try:
         job_applications_count_by_employed_users = row[0]
 
     sql_job_application_count_for_unemployed_users = 'select count(*) from job_applications ' \
-                                                   'join users on job_applications.user_id = users.user_id ' \
+                                                   'join users on job_applications.user_id = users.id ' \
                                                    'where currently_employed = false;'
     print(sql_job_application_count_for_unemployed_users)
     cursor.execute(sql_job_application_count_for_unemployed_users)
