@@ -32,9 +32,11 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'authentication',
+    'recommendation.apps.RecommendationConfig',
     'job_system_module.apps.JobSystemModuleConfig',
     'schools.apps.SchoolsConfig',
     'django_filters',
+    'background_task',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

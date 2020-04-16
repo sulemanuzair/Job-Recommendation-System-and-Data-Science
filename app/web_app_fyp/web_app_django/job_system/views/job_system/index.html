@@ -43,14 +43,15 @@
 						Top Jobs
 					</h1>
 					{% if top_jobs %}
-						{% for job in top_jobs %}
+						{% for job1 in top_jobs %}
 							<div class='card mb-3'>
 								<div class='card-body'>
 									<p class='lead'>
-										{{ job.title_original }}
+										{{ job1.job_id }}
+										{{ job1.job.title_original }}
 									</p>
 									<p>
-										{{ job.city }}
+										{{ job1.job.city }}
 									</p>
 								</div>
 							</div>
