@@ -1,0 +1,75 @@
+{% extends 'application.html' %}
+
+{% block content %}
+	<div class='container'>
+		<div class='row'>
+			<div class='col-md-6  m-auto text-center'>
+				<h1 class='text-center mb-3'>
+					Title: {{ job.title_original }}
+				</h1>
+				<hr/>
+				<div>
+					<h3> Information and Detail of Job </h3>
+					<div class='card mb-3'>
+						<div class='card-body'>
+							<p class='lead'>
+								<strong>Description:</strong> {{ job.description }}
+								<br>
+								<strong>Requirement:</strong> {{ job.requirements }}
+								<br>
+								<strong>City:</strong> {{ job.city }}
+							</p>
+						</div>
+					</div>
+				</div>
+				<hr/>
+				<div>
+					{% if job.jobapplication_set.all %}
+						<h3>Users who applied to this job({{ job.jobapplication_set.count }})</h3>
+						{% for app in job.jobapplication_set.all %}
+							<div class='card mb-3'>
+								<div class='card-body'>
+									<p class='lead'>
+										<strong>City:</strong> {{ app.user.city }}
+										<br>
+										<strong>Major:</strong> {{ app.user.major }}
+										<br>
+										<strong>Experience:</strong> {{ app.user.total_years_experience }} years
+									</p>
+								</div>
+							</div>
+						{% endfor %}
+					{% else %}
+						<p>
+							No one has applied to this job until now.
+						</p>
+					{% endif %}
+				</div>
+				<hr/>
+				<div>
+					<h3> Similar Jobs </h3>
+					{% if similar_jobs %}
+						{% for job in similar_jobs %}
+							<div class='card mb-3'>
+								<div class='card-body'>
+									<p class='lead'>
+										<a class="nav-link" href="/job_system/{{ job.id }}">{{ job.title_original }}</a>
+									</p>
+									<p>
+										{{ job.city }}
+									</p>
+								</div>
+							</div>
+						{% endfor %}
+					{% else %}
+						<p>
+							Similar Job Recommendations not available
+						</p>
+					{% endif %}
+				</div>
+				<hr/>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
