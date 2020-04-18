@@ -34,3 +34,10 @@ def index(request):
 	top_jobs = Job.objects.filter(id__gt=9990, id__lt=10000)
 	context = { 'jobs': jobs, 'pages_range': pages_range, 'jobs_filter': jobs_filter, 'top_jobs': top_jobs }
 	return render(request, 'job_system/index.html', context)
+
+@login_required(login_url='login')
+def show(request, job_id):
+	job = Job.objects.prefetch_related().get(pk=job_id)
+	similar_jobs = Job.objects.filter(id__gt=9990, id__lt=10000)
+	return render(request, 'job_system/show.html', { 'job': job, 'similar_jobs': similar_jobs })
+

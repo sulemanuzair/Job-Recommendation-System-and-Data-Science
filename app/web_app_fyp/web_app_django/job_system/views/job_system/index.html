@@ -16,10 +16,7 @@
 							<div class='card mb-3'>
 								<div class='card-body'>
 									<p class='lead'>
-										{{ job.title_original }}
-										{% for app in job.job_application_set.all %}
-											{{ app.job_id }}
-										{% endfor %}
+										<a class="nav-link" href="/job_system/{{ job.id }}">{{ job.title_original }}</a>
 									</p>
 									<p>
 										{{ job.city }}
@@ -47,7 +44,7 @@
 							<div class='card mb-3'>
 								<div class='card-body'>
 									<p class='lead'>
-										{{ job.title_original }}
+										<a class="nav-link" href="/job_system/{{ job.id }}">{{ job.title_original }}</a>
 									</p>
 									<p>
 										{{ job.city }}
