@@ -6,8 +6,11 @@ from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 from django.core.paginator import Paginator
 from django.contrib.auth.decorators import login_required
+from background_task import background
+
 
 from .models import Job, User, JobApplication, UserHistory
+from recommendation.models import *
 from .filters import JobsFilter
 
 @login_required(login_url='login')
@@ -31,6 +34,6 @@ def index(request):
 	pages_range = range(lower_page_limit, upper_page_limit)
 
 
-	top_jobs = Job.objects.filter(id__gt=9990, id__lt=10000)
+	top_jobs = TopAppliedJob.objects.all().order_by('-applications_count')
 	context = { 'jobs': jobs, 'pages_range': pages_range, 'jobs_filter': jobs_filter, 'top_jobs': top_jobs }
 	return render(request, 'job_system/index.html', context)

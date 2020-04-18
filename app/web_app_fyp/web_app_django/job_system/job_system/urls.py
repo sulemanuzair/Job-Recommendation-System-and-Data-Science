@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from recommendation.views import calculate_top_applied_jobs
+
 urlpatterns = [
 	path('', include('main_pages.urls')),
     path('authentication/', include('django.contrib.auth.urls')),
@@ -24,3 +26,5 @@ urlpatterns = [
     path('job_system/', include('job_system_module.urls')),
     path('admin/', admin.site.urls),
 ]
+
+calculate_top_applied_jobs(repeat=3600, repeat_until=None)
