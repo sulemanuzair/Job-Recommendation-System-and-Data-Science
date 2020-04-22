@@ -3,6 +3,9 @@ start cmd.exe
 pipenv shell
 =======
 
+======== Starting background job worker
+python manage.py process_tasks
+=========
 
 django-admin startproject project_name
 
@@ -43,3 +46,5 @@ check how to add default application.html to every file
 
 
 read documentation django 
+
+

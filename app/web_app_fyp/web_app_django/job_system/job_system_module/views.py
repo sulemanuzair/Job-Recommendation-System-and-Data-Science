@@ -6,8 +6,11 @@ from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 from django.core.paginator import Paginator
 from django.contrib.auth.decorators import login_required
+from background_task import background
+
 
 from .models import Job, User, JobApplication, UserHistory
+from recommendation.models import *
 from .filters import JobsFilter
 
 @login_required(login_url='login')
@@ -16,8 +19,6 @@ def index(request):
 	jobs_filter = JobsFilter(request.GET, queryset=jobs)
 	jobs = jobs_filter.qs.prefetch_related()
 
-	app1 = jobs.first().jobapplication_set
-	
 	page = request.GET.get('page')
 	paginator = Paginator(jobs, 15)
 	jobs = paginator.get_page(page)
@@ -31,13 +32,13 @@ def index(request):
 	pages_range = range(lower_page_limit, upper_page_limit)
 
 
-	top_jobs = Job.objects.filter(id__gt=9990, id__lt=10000)
+	top_jobs = TopAppliedJob.objects.all().order_by('-applications_count')
 	context = { 'jobs': jobs, 'pages_range': pages_range, 'jobs_filter': jobs_filter, 'top_jobs': top_jobs }
 	return render(request, 'job_system/index.html', context)
 
 @login_required(login_url='login')
 def show(request, job_id):
 	job = Job.objects.prefetch_related().get(pk=job_id)
-	similar_jobs = Job.objects.filter(id__gt=9990, id__lt=10000)
+	similar_jobs = PeopleWhoAppliedThisAlsoApplied.objects.filter(job=job)
 	return render(request, 'job_system/show.html', { 'job': job, 'similar_jobs': similar_jobs })
 

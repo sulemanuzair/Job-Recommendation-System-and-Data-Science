@@ -5,10 +5,12 @@ from django.urls import reverse
 
 from .models import Course, Student 
 # Create your views here.
+from recommendation.views import *
 
 def index(request):
 	courses = Course.objects.all()
 	context = {'courses': courses}
+	initialize_calculate_people_who_applied_this_also_applied()
 	return render(request, 'schools/index.html', context)
 
 def course(request, course_id):
