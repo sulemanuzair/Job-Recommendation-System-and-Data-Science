@@ -1,9 +1,23 @@
 <div class='paginate'>
-	{%  if objects.has_previous %}	
-		<a href="?page=1">
+	{% if objects.has_previous %}	
+		<a href="?page=1
+		{% if title %}
+				&title={{title}}
+		{% endif  %}
+		{% if city %}
+				&city={{city}}
+		{% endif  %}
+		">
 			<i class="fas fa-angle-double-left"></i>
 		</a>
-		<a href="?page={{ objects.previous_page_number }}">
+		<a href="?page={{ objects.previous_page_number }}
+		{% if title %}
+				&title={{title}}
+		{% endif  %}
+		{% if city %}
+				&city={{city}}
+		{% endif  %}
+		">
 			<i class="fas fa-angle-left"></i>
 		</a>
 	{% endif %}
@@ -11,15 +25,36 @@
 		{% if num == objects.number %}
 			<span class='bg-info text-light paginate-current-number paginate-number'>{{ num }}</span>
 		{% elif num > objects.number|add:'-5' and num < objects.number|add:'5' %}
-			<a class='bg-primary text-light paginate-number' href="?page={{ num }}">{{ num }}</a>
+			<a class='bg-primary text-light paginate-number' href="?page={{ num }}
+			{% if title %}
+				&title={{title}}
+			{% endif  %}
+			{% if city %}
+				&city={{city}}
+			{% endif  %}
+			">{{ num }}</a>
 		{% endif %}	
 	{% endfor %}
 	{%  if objects.has_next %}	
-		<a href="?page={{ objects.next_page_number }}">
+		<a href="?page={{ objects.next_page_number }}
+		{% if title %}
+				&title={{title}}
+		{% endif  %}
+		{% if city %}
+				&city={{city}}
+		{% endif  %}
+		">
 			<i class="fas fa-angle-right"></i>
 		</a>
 		{% if objects.paginator.num_pages < 100 %}
-			<a href="?page={{ objects.paginator.num_pages }}">
+			<a href="?page={{ objects.paginator.num_pages }}
+			{% if title %}
+				&title={{title}}
+			{% endif  %}
+			{% if city %}
+				&city={{city}}
+			{% endif  %}
+			">
 				<i class="fas fa-angle-double-right"></i>
 			</a>
 		{% endif %}

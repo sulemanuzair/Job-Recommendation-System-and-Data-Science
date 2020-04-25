@@ -24,7 +24,7 @@
 								</div>
 							</div>
 						{% endfor %}
-						{% include '_paginate.html' with objects=jobs pages_range=pages_range %}
+						{% include '_paginate.html' with objects=jobs pages_range=pages_range title=request.GET.title city=request.GET.city %}
 					{% else %}
 						<p>
 							No jobs available
