@@ -16,10 +16,7 @@
 							<div class='card mb-3'>
 								<div class='card-body'>
 									<p class='lead'>
-										{{ job.title_original }}
-										{% for app in job.job_application_set.all %}
-											{{ app.job_id }}
-										{% endfor %}
+										<a class="nav-link" href="/job_system/{{ job.id }}">{{ job.title_original }}</a>
 									</p>
 									<p>
 										{{ job.city }}
@@ -43,15 +40,14 @@
 						Top Jobs
 					</h1>
 					{% if top_jobs %}
-						{% for job1 in top_jobs %}
+						{% for job in top_jobs %}
 							<div class='card mb-3'>
 								<div class='card-body'>
 									<p class='lead'>
-										{{ job1.job_id }}
-										{{ job1.job.title_original }}
+										<a class="nav-link" href="/job_system/{{ job.job.id }}">{{ job.job.title_original }}</a>
 									</p>
 									<p>
-										{{ job1.job.city }}
+										{{ job.job.city }}
 									</p>
 								</div>
 							</div>

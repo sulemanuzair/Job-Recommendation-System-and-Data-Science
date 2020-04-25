@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from recommendation.views import calculate_top_applied_jobs
+from recommendation.views import *
 
 urlpatterns = [
 	path('', include('main_pages.urls')),
@@ -27,4 +27,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 
-calculate_top_applied_jobs(repeat=3600, repeat_until=None)
+
+#calculate_top_applied_jobs(repeat=3600, repeat_until=None)
+#if PeopleWhoAppliedThisAlsoApplied.objects.all().count() == 0:
+#    initialize_calculate_people_who_applied_this_also_applied()

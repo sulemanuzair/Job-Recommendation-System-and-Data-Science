@@ -43,18 +43,18 @@ class Job(models.Model):
 
 class JobApplication(models.Model):
     id = models.IntegerField(primary_key=True)
-    user_id = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
+    user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     window_id = models.IntegerField()
     split = models.CharField(max_length=20)
     application_date = models.DateTimeField()
-    job_id = models.ForeignKey(Job, on_delete=models.SET_NULL, null=True)
+    job = models.ForeignKey(Job, on_delete=models.SET_NULL, null=True)
 
     class Meta:
         db_table = 'job_applications'
 
 class UserHistory(models.Model):
     id = models.IntegerField(primary_key=True)
-    user_id = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
+    user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     window_id = models.IntegerField()
     split = models.CharField(max_length=20)
     sequence = models.IntegerField()

@@ -19,8 +19,6 @@ def index(request):
 	jobs_filter = JobsFilter(request.GET, queryset=jobs)
 	jobs = jobs_filter.qs.prefetch_related()
 
-	app1 = jobs.first().jobapplication_set
-	
 	page = request.GET.get('page')
 	paginator = Paginator(jobs, 15)
 	jobs = paginator.get_page(page)
@@ -37,3 +35,10 @@ def index(request):
 	top_jobs = TopAppliedJob.objects.all().order_by('-applications_count')
 	context = { 'jobs': jobs, 'pages_range': pages_range, 'jobs_filter': jobs_filter, 'top_jobs': top_jobs }
 	return render(request, 'job_system/index.html', context)
+
+@login_required(login_url='login')
+def show(request, job_id):
+	job = Job.objects.prefetch_related().get(pk=job_id)
+	similar_jobs = PeopleWhoAppliedThisAlsoApplied.objects.filter(job=job)
+	return render(request, 'job_system/show.html', { 'job': job, 'similar_jobs': similar_jobs })
+

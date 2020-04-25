@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'schools.apps.SchoolsConfig',
     'django_filters',
     'background_task',
+    'jquery',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

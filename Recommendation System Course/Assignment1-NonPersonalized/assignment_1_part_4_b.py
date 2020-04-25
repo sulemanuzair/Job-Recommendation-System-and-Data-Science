@@ -31,7 +31,8 @@ jobs_applied_by_users_who_applied_selected_job = apps.loc[apps['UserID'].isin(us
 print('jobs_applied_by_users_who_applied_selected_job', jobs_applied_by_users_who_applied_selected_job.JobID.value_counts())
 jobs_applied_by_users_who_applied_selected_job_with_their_counts_with_those_users = jobs_applied_by_users_who_applied_selected_job.JobID.value_counts()
 ids_of_jobs_applied_by_users_who_applied_selected_job = jobs_applied_by_users_who_applied_selected_job.JobID.value_counts().index.values
-ids_list_of_jobs_applied_by_users_who_applied_selected_job = jobs_applied_by_users_who_applied_selected_job.JobID.value_counts().index.tolist()
+# next line variable not being used
+#ids_list_of_jobs_applied_by_users_who_applied_selected_job = jobs_applied_by_users_who_applied_selected_job.JobID.value_counts().index.tolist()
 jobs_with_count_of_selected_jobs = jobs_with_count_applied.loc[jobs_with_count_applied.index.isin(ids_of_jobs_applied_by_users_who_applied_selected_job)]
 
 #also need to apply some basic criteria, at least these many should have been applied
