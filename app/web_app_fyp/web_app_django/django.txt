@@ -48,3 +48,5 @@ check how to add default application.html to every file
 read documentation django 
 
 
+######
+pip install django-jquery
