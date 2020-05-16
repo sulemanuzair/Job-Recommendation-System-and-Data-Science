@@ -38,6 +38,8 @@
         <a href="/authentication/login"><button class="btn btn-primary border">Sign In</button></a>
         <a href="/accounts/register"><button class="btn btn-primary border">Sign Up</button></a>
       {% else %}
+        <a href="/user/job_history"><button class="btn btn-primary border">Job History</button></a>
+        <a href="/user/job_application_history"><button class="btn btn-primary border">Job Applications</button></a>
         <button class="btn btn-primary border">{{ user.username }}</button>
         <a href="/accounts/logout"><button class="btn btn-primary border">Sign Out</button></a>
       {% endif %}

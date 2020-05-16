@@ -25,6 +25,7 @@ urlpatterns = [
 	path('schools/', include('schools.urls')),
     path('job_system/', include('job_system_module.urls')),
     path('admin/', admin.site.urls),
+    path('user/', include('user.urls'))
 ]
 
 
