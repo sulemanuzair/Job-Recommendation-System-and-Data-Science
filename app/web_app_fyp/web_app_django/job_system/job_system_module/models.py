@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User as AuthUser
 
 class User(models.Model):
     id = models.IntegerField(primary_key=True)
@@ -16,6 +17,7 @@ class User(models.Model):
     currently_employed = models.BooleanField()
     managed_others = models.BooleanField()
     managed_how_many = models.IntegerField()
+    auth_user = models.ForeignKey(AuthUser, on_delete=models.SET_NULL, null=True)   
 
     class Meta:
         db_table = 'users'

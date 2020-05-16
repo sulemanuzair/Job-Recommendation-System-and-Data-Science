@@ -22,3 +22,21 @@ results_path = root_path + '/Results'
 # ;
 
 
+# Create django auth users for dataset users
+# Python shell command
+# from django.contrib.auth.hashers import make_password
+# Other Model needs to be included as well
+pwd = make_password('password')
+for user in User.objects.filter(auth_user_id = None):
+	try:
+		with transaction.atomic():
+            user.auth_user = AuthUser.objects.create(
+				username=str(user.id),
+				email=str(user.id) + '@email.com',
+				password=pwd,
+				is_active=True
+			)
+			user.auth_user.save()
+			user.save()
+	except Exception as e:
+		print('An error occured for user id '+ str(user.id) + ': ' + str(e))
