@@ -38,7 +38,7 @@ def index(request):
 
 @login_required(login_url='login')
 def show(request, job_id):
-	job = Job.objects.prefetch_related().get(pk=job_id)
-	similar_jobs = PeopleWhoAppliedThisAlsoApplied.objects.filter(job=job)
+	job = Job.objects.prefetch_related('jobapplication_set__user').get(pk=job_id)
+	similar_jobs = PeopleWhoAppliedThisAlsoApplied.objects.select_related('also_applied_job').filter(job=job)
 	return render(request, 'job_system/show.html', { 'job': job, 'similar_jobs': similar_jobs })
 
