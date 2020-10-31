@@ -80,9 +80,9 @@ WSGI_APPLICATION = 'job_system.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'jobs_system',
+        'NAME': 'jobs_system_django',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'R00t@mysql',
         'HOST': 'localhost',
         'PORT': '3306'
     }
