@@ -1,5 +1,10 @@
-# Data Science
-This repository contains the information in form of texts, code and output in form of visualizations and text while learning data science.
+This Repository contains
+- A Job Recommendation System
+- Pjango Based Web Application
+- Code Snippets, Course(s) Important Points, Visualizations, Processsed Data while Learning Data Science.
+
+# Job Recommendation System - Data Science
+This repository contains the information in form of texts and code, and output in the form of visualizations and text while learning recommendation system and data science.
 
 The sequence followed as:
 # Learning Python
@@ -24,6 +29,3 @@ Understanding story telling, data story telling and its importance.
 
 # Other Information
 DataSet: The dataset used here is available at kaggle Job Recommendation Challenge' at: https://www.kaggle.com/c/job-recommendation/data
-
-Dataset division
-Adding location attributes
